@@ -1,0 +1,39 @@
+@use '../helpers' as helpers;
+
+.blueInit{
+color: helpers.$blueInit;
+}
+
+.white{
+    color:#fff;
+}
+.whiteBg{
+    background:#fff;
+}
+
+.blueInitbg{
+    background: helpers.$blueInit;
+    }
+.blueDarkBg{
+    background: helpers.$blueDark;
+    }
+    
+    .blueDark{
+        color: helpers.$blueDark;
+        }
+
+    .greyBlue{
+        color:helpers.$greyBlue;
+    }
+
+    .green-primary{
+        color:helpers.$greenPrimary;
+    }
+
+    .green-primary-bg{
+
+        background:helpers.$greenPrimary;
+    }
+.blue-middle-bg{
+    background:helpers.$blueMiddle;
+}

@@ -1,0 +1,198 @@
+@use '../helpers' as helpers;
+// partie header
+ul.flex-nav {
+
+    padding:0;
+   
+}
+
+nav.nav-desktop{
+    display:none;
+}
+
+.ht-100{
+    height:100px;
+}
+
+.flex-burger{
+  margin:0;
+  padding-left:1rem;
+}
+.column-grow{width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-direction: row-reverse;}
+.flex-nav-lang{border-radius:30px;
+  padding:0;margin:0;
+
+display:flex;
+
+justify-content:space-between;
+align-content:center;
+align-items:center;
+
+
+
+}
+.flex-nav-lang li{ 
+
+
+
+
+  list-style-type: none;
+  font-size:0.9rem;
+  font-family:"Poppins";
+  font-weight:400;
+}
+
+.flex-nav li{
+    display:inline-block;
+    list-style-type: none;
+    margin-right:1rem;
+    font-size:0.9rem;
+    font-family:"Poppins";
+    font-weight:400;
+}
+
+
+.flex-nav li:not(:last-of-type) a:hover{
+  padding-bottom:0.5rem;
+  background: url("../../images/line1.svg") no-repeat;
+  background-position: 0px bottom;
+
+}
+
+
+
+.lang-resp{
+  display:flex;
+}
+.lang{
+  display:none;
+}
+.flex-welcome-buttons{
+  padding:0;
+}
+.flex-welcome-buttons li{
+  display:inline-block;
+  list-style-type: none;
+  
+  font-family:"Poppins";
+  font-weight:500;
+}
+.flex-welcome-buttons a{
+
+  display:flex;
+  font-size: 0.8rem;
+}
+
+.header-before-stick{ opacity: 1;
+
+}
+.header-stick{  z-index:9999;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#fff;
+  box-shadow:0 3px 6px  rgba(0, 0, 0, 0.05)  ;
+// transition:all .7s ease-in-out ;
+opacity: 0.95;
+}
+
+
+
+.header .img-indh{
+    display:none;
+    margin-left:1rem;
+
+}
+header{
+
+  padding:2rem 0 8rem 0;
+  position:relative;
+}
+
+header::before{
+  content:'';
+  background:url('../../images/welcomebg.svg');
+  height: 100%;
+opacity:0.6;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-size:cover;
+z-index: -1;
+
+}
+
+
+.nav-mobile ul li:not(:last-of-type):hover{
+background:helpers.$whitePrimary;
+color:helpers.$blueDark;
+}
+.nav-mobile ul li:not(:last-of-type) a:hover{
+  background:helpers.$whitePrimary;
+  color:helpers.$blueDark;
+  }
+
+  .welcome-img{
+    width:70%;
+  }
+  
+// fin partie header
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+  overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: helpers.$blueDark;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+    
+ 
+  .sidenav a {
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: helpers.$whitePrimary;
+    display: block;
+    transition: 0.3s;
+  
+  }
+
+  .sidenav a.blueDark {
+    margin-top:0.5rem;
+    background: #fff;
+    color:helpers.$blueDark;
+    border:2px solid helpers.$blueInit;
+  }
+
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+

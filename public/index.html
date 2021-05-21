@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/front-office/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="build/css/main.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>IRCHAD LAARACHE</title>
+  </head>
+  <body>
+    <header class="padding-home">
+      <section class="header header-before-stick" data-title="header-section">
+        <div class="container">
+          <div class="row row-flex ht-100 align-center">
+            <div class="column-3 column-xs-2 column-xl-3 row-flex align-center">
+              <a href="./"
+                ><img src="images/irchadlogo.svg" class="" alt="irchad logo"
+              /></a>
+              <a href="./" class="row-flex align-center">
+                <img src="images/logo2.svg" class="img-indh" alt="image indh"
+              /></a>
+            </div>
+            <div
+              class="
+                column-9 column-xs-10 column-xl-9
+                row-flex
+                justify-between
+                align-center
+              "
+            >
+              <div class="column-grow flex-row align-center">
+                <nav class="nav-desktop">
+                  <ul class="flex-nav blueInit">
+                    <li>
+                      <a href="https://larache.irchad.ma/a-propos">À Propos</a>
+                    </li>
+                    <li>
+                      <a href="https://larache.irchad.ma/programme"
+                        >Programme</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://larache.irchad.ma/project-submission"
+                        >Soumissionner un projet</a
+                      >
+                    </li>
+                    <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
+                    <li>
+                      <a href="https://larache.irchad.ma/contact">Contact</a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="login"
+                        class="
+                          button-md
+                          purple
+                          whiteBg
+                          py2
+                          px3
+                          row-flex
+                          align-center
+                        "
+                        ><img src="images/user-icon.svg" class="mx2" />Se
+                        Connecter</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="column-grow">
+                <ul class="flex-burger">
+                  <li>
+                    <div class="btn-menu">
+                      <span></span>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="flex-nav-lang lang z-9999">
+                  <li>
+                    <span class="dropdown">
+                      <button>AR</button>
+                      <label>
+                        <input type="checkbox" />
+                        <ul>
+                          <li>AR</li>
+
+                          <li>FR</li>
+                        </ul>
+                      </label>
+                    </span>
+                  </li>
+                </ul>
+
+                <ul class="flex-nav-lang lang-resp z-9999">
+                  <li>
+                    <a
+                      href="https://larache.irchad.ma/locale/ar"
+                      class="
+                        button-lang
+                        ar
+                        not-active-lang
+                        blueInitbg
+                        white
+                        p1_5
+                      "
+                      >AR</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://larache.irchad.ma/locale/en"
+                      class="button-lang fr px2-5 blueDark p1_5"
+                      >FR</a
+                    >
+                  </li>
+                </ul>
+
+                <nav class="nav-mobile">
+                  <div id="mySidenav" class="sidenav">
+                    <ul
+                      class=""
+                      style="position: absolute; top: 1rem; left: 10px"
+                    >
+                      <li>
+                        <img src="images/irchadlogowhite.svg" class="" alt="" />
+                      </li>
+                    </ul>
+                    <a
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      >×</a
+                    >
+                    <ul class="blueInit px0 mt10">
+                      <li>
+                        <a href="https://larache.irchad.ma/a-propos"
+                          >À Propos</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://larache.irchad.ma/programme"
+                          >Programme</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://larache.irchad.ma/project-submission"
+                          >Soumissionner un projet</a
+                        >
+                      </li>
+                      <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
+                      <li>
+                        <a href="https://larache.irchad.ma/contact">Contact</a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="login"
+                          class="mx4 button-md whiteBg blueDark py2 px3"
+                          >Se Connecter</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fin header section  -->
+      <!-- clear absolute  -->
+      <div class="clear-absolute"></div>
+      <!-- clear absolute  -->
+      <!-- page header section  -->
+      <section
+        class="welcome-section section-my welcome-overlay"
+        data-title="accueil-section"
+      >
+        <div class="">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide pointer-event"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                class="indicator active"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                class="indicator"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="indicator"
+                aria-label="Slide 1"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item slide-1 active">
+                <div class="row row-flex align-center">
+                  <div
+                    class="
+                      column-12 column-sm-12 column-md-6
+                      row-flex
+                      flex-col
+                      align-between
+                      animate__animated animate__pulse
+                      order-1 order-md-0
+                    "
+                  >
+                    <h1 class="font-lg-bold font-lg-xxl">
+                      La plateforme des jeunes porteurs de projets de Larache
+                    </h1>
+                    <p class="">
+                      Vous êtes à la recherche d’une idée ou d’un
+                      accompagnement? IRCHAD est votre nouvelle plateforme
+                      digitale qui vous accompagne dans votre réflexion, de
+                      l’idée à la mise en marché.
+                    </p>
+                    <ul class="flex-welcome-buttons">
+                      <li class="mr3">
+                        <a
+                          href="https://larache.irchad.ma/project-submission"
+                          class="button-md whiteBg purple px4 py3"
+                          >Soumissionner un projet maintenant</a
+                        >
+                      </li>
+                      <li class="mt3">
+                        <a
+                          href="https://larache.irchad.ma/faq"
+                          class="button-md white button-border px4 py3"
+                          >En savoir plus</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <img src="images/welcomebg.svg" />
+              </div>
+
+              <div class="carousel-item slide-2">
+                <div class="row row-flex align-center">
+                  <div
+                    class="
+                      column-12 column-sm-12 column-md-6
+                      row-flex
+                      flex-col
+                      align-between
+                      order-1
+                      animate__animated animate__pulse
+                    "
+                  >
+                    <h1 class="font-lg-bold font-lg-xxl">
+                      Libérez votre potentiel entrepreneurial&nbsp;!
+                    </h1>
+                    <p class="">
+                      Osez l’entreprenariat. A travers notre plateforme, nous
+                      vous aidons étape par étape pour rayonner avec votre
+                      projet.
+                    </p>
+                    <ul class="flex-welcome-buttons">
+                      <li class="mr3">
+                        <a
+                          href="https://larache.irchad.ma/project-submission"
+                          class="button-md whiteBg purple px4 py3"
+                          >Osez maintenant !</a
+                        >
+                      </li>
+                      <li class="mt3">
+                        <a
+                          href="https://larache.irchad.ma/faq"
+                          class="button-md white button-border px4 py3"
+                          >En savoir plus</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src="images/welcomebg.svg" />
+              </div>
+
+              <div class="carousel-item slide-3">
+                <div class="row row-flex align-center">
+                  <div
+                    class="
+                      column-12 column-sm-12 column-md-6
+                      row-flex
+                      flex-col
+                      align-between
+                      order-1 order-md-0
+                      animate__animated animate__pulse
+                    "
+                  >
+                    <h1 class="font-lg-bold font-lg-xxl">
+                      Entreprendre, ça commence ici&nbsp;!
+                    </h1>
+                    <p class="">
+                      Profitez dès à présent d’un accompagnement sur-mesure et
+                      des formations pointues pour un projet prospère.
+                    </p>
+                    <ul class="flex-welcome-buttons">
+                      <li class="mr3">
+                        <a
+                          href="https://larache.irchad.ma/project-submission"
+                          class="button-md whiteBg purple px4 py3"
+                          >Commencer maintenant</a
+                        >
+                      </li>
+                      <li class="mt3">
+                        <a
+                          href="https://larache.irchad.ma/programme"
+                          class="button-md white button-border px4 py3"
+                          >Découvrir le programme</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img src="images/welcomebg.svg" />
+              </div>
+
+              <div class="news-bar">
+                <marquee
+                  direction="left"
+                  scrollamount="1"
+                  scrolldelay="60"
+                  behavior="scroll"
+                  onmouseover="this.stop()"
+                  onmouseout="this.start()"
+                >
+                  <ul>
+                    <li>
+                      <a href="#" class="hvr-pop"
+                        ><span><b>News1</b></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hvr-pop"
+                        ><span><b>News2</b></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="hvr-pop"
+                        ><span><b>News3</b></span>
+                      </a>
+                    </li>
+                  </ul>
+                </marquee>
+              </div>
+
+              <div class="events">
+                <div class="event-card">
+                  <time class="date">
+                    <b class="d-block">15</b>
+                    <p class="d-block">FEB</p>
+                  </time>
+                  <div class="description">
+                    <p class="d-block">Lorem ipsum dolor sit amet</p>
+                    <a href="#">Lire la suite</a>
+                  </div>
+                </div>
+                <div class="event-card">
+                  <time class="date">
+                    <b class="d-block">15</b>
+                    <p class="d-block">FEB</p>
+                  </time>
+                  <div class="description">
+                    <p class="d-block">Lorem ipsum dolor sit amet</p>
+                    <a href="#">Lire la suite</a>
+                  </div>
+                </div>
+
+                <div class="event-card">
+                  <time class="date">
+                    <b class="d-block">15</b>
+                    <p class="d-block">FEB</p>
+                  </time>
+                  <div class="description">
+                    <p class="d-block">Lorem ipsum dolor sit amet</p>
+                    <a href="#">Lire la suite</a>
+                  </div>
+                </div>
+
+                <div class="event-cards">
+                  <a
+                    href="https://larache.irchad.ma/project-submission"
+                    class="white px4 py2"
+                    >Voir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <div
+              class="blueDark button-md carousel-arrow"
+              style="z-index: 99999; position: absolute; top: 35%; right: 20%"
+            >
+              &lt;
+            </div>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <div
+              class="blueDark button-md carousel-arrow"
+              style="z-index: 99999; position: absolute; top: 35%; left: 20%"
+            >
+              &gt;
+            </div>
+          </button>
+        </div>
+      </section>
+      <!-- fin page header section  -->
+    </header>
+
+    <!-- Accompagnement irchad -->
+    <section
+      class="accompagnement-section section-my"
+      data-title="accompagnement-section"
+    >
+      <div class="container py13">
+        <div class="row row-flex align-center">
+          <div class="column-12 row-flex flex-col align-between">
+            <h1 class="section-h1-center text-center">
+              Un programme <br />
+              d’accompagnement de A à Z
+            </h1>
+          </div>
+        </div>
+        <div class="row row-flex justify-around mt10">
+          <div
+            class="
+              column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
+              .align-self-stretch
+              mb8
+              px3
+            "
+          >
+            <div class="card-box h-card-100">
+              <img src="images/accompagnement1.svg" alt="" class="w-100" />
+              <div class="cardbox-body row-flex flex-col">
+                <h3 class="section-h3">Identifier</h3>
+                <p>
+                  Nous cherchons activement à encourager l'entrepreneuriat et
+                  l'esprit entrepreneurial, particulièrement chez les jeunes de
+                  18 à 25 ans, en collaboration avec les acteurs de l'écosystème
+                  entrepreneurial (INDH, Anapec, OFPPT…)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
+              .align-self-stretch
+              mb8
+              px3
+            "
+          >
+            <div class="card-box h-card-100 align-between">
+              <img src="images/accompagnement2.svg" alt="" class="w-100" />
+              <div class="cardbox-body row-flex flex-col">
+                <h3 class="section-h3">Accompagner et orienter</h3>
+                <p>
+                  Nous cherchons activement à encourager l'entrepreneuriat et
+                  l'esprit entrepreneurial, particulièrement chez les jeunes de
+                  18 à 25 ans, en collaboration avec les acteurs de l'écosystème
+                  entrepreneurial (INDH, Anapec, OFPPT…)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
+              .align-self-stretch
+              mb8
+              px3
+            "
+          >
+            <div class="card-box h-card-100">
+              <img src="images/accompagnement3.svg" alt="" class="w-100" />
+              <div class="cardbox-body row-flex flex-col">
+                <h3 class="section-h3">Agir</h3>
+                <p>
+                  Nous cherchons activement à encourager l'entrepreneuriat et
+                  l'esprit entrepreneurial, particulièrement chez les jeunes de
+                  18 à 25 ans, en collaboration avec les acteurs de l'écosystème
+                  entrepreneurial (INDH, Anapec, OFPPT…)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-flex justify-center">
+          <div class="container py4">
+            <div class="column-12 row-flex justify-center">
+              <a href="#" class="button-md blueInitbg white py2 px5"
+                >Je découvre le programme</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin Accompagnement irchad -->
+
+    <!-- Pourquoi irchad -->
+    <section
+      class="pourquoi-irchad-section section-my py2"
+      data-title="pourquoi-irchad-section"
+    >
+      <div class="container">
+        <div class="row row-flex align-center justify-center">
+          <div class="column-12 row-flex align-between">
+            <h1 class="section-h1-center text-center">
+              POURQUOI CHOISIR IRCHAD ??
+            </h1>
+          </div>
+
+          <div class="column-12 row-flex align-between px4 mt10">
+            <img src="images/orientation-icon.svg" alt="" />
+            <article class="row-flex flex-col justify-center ml">
+              <b>Espace d’orientation</b>
+              <p class="greyBlue">
+                Un espace d’accueil, d’écoute et d’orientation pour un
+                accompagnement convivial et effectif.
+              </p>
+            </article>
+          </div>
+
+          <div class="column-12 row-flex align-between flex-dir-rev px4">
+            <img src="images/mentors-icon.svg" alt="" />
+            <article class="row-flex flex-col justify-center text-right mr">
+              <b>Mentors proactifs</b>
+              <p class="greyBlue">
+                Un comité multidisciplinaire pour vous accompagner tout au long
+                de votre projet et pour vous aider à atteindre vos objectifs.
+              </p>
+            </article>
+          </div>
+
+          <div class="column-12 row-flex align-between px4">
+            <img src="images/demarches-icon.svg" alt="" />
+            <article class="row-flex flex-col justify-center ml">
+              <b>Démarches fluides</b>
+              <p class="greyBlue">
+                Des démarches simples et fluides appuyées par les technologies
+                de l’information les plus modernes.
+              </p>
+            </article>
+          </div>
+
+          <div class="column-12 row-flex align-between flex-dir-rev px4">
+            <img src="images/soutien-icon.svg" alt="" />
+            <article class="row-flex flex-col justify-center text-right mr">
+              <b>Soutien financier </b>
+              <p class="greyBlue">
+                Un soutien financier pouvant aller jusqu’à 200.000 Dirhams par
+                projet.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin Pourquoi irchad -->
+
+    <!-- en savoir plus  de irchad -->
+    <section
+      class="savoirplus-section section-my"
+      data-title="savoirplus-section"
+    >
+      <div class="container">
+        <div class="row row-flex align-center justify-center py13">
+          <div class="column-12 row-flex flex-col align-center justify-around">
+            <h1 class="section-h1-center text-center">
+              EN SAVOIR PLUS SUR LE PROGRAMME IRCHAD
+            </h1>
+          </div>
+
+          <div
+            class="
+              column-12
+              row-flex
+              flex-col
+              align-center
+              justify-around
+              py7
+              mt8
+            "
+          >
+            <a href="#" class="button-md green-primary-bg white py2 px5"
+              >Nous contacter maintenant</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin en savoir plus  de irchad -->
+
+    <!-- contact -->
+    <section class="contact-section section-my" data-title="contact-section">
+      <div class="container">
+        <div class="row row-flex align-center justify-center">
+          <div class="column-12 row-flex flex-col align-center justify-around">
+            <h1 class="section-h1-center text-center">Contactez-Nous</h1>
+          </div>
+        </div>
+
+        <div class="row row-flex align-center justify-center mt8">
+          <div class="column-12 row-flex flex-col align-center justify-around">
+            <form action="#" class="w-100">
+              <div class="field-row field-lg-row">
+                <div class="field-input field-lg-input w-100">
+                  <input
+                    type="text"
+                    id="prenom"
+                    class="form-input form-lg-input"
+                    placeholder="Votre prénom"
+                  />
+                </div>
+
+                <div class="field-input field-lg-input text-right w-100">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-input form-lg-input"
+                    placeholder="Votre nom"
+                  />
+                </div>
+              </div>
+              <div class="field-row field-lg-row">
+                <div class="field-input field-lg-input w-100">
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-input form-lg-input"
+                    placeholder="Votre adresse email"
+                  />
+                </div>
+                <div class="field-input field-lg-input text-right w-100">
+                  <input
+                    type="text"
+                    id="tel"
+                    class="form-input form-lg-input"
+                    placeholder="Votre numéro de téléphone"
+                  />
+                </div>
+              </div>
+
+              <div class="field-row field-lg-row">
+                <div class="field-input w-100">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    class="form-input"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <a href="#" class="button-md blueInitbg white py2 px5"
+                  >Envoyer un message
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin contact -->
+
+    <!-- footer -->
+    <footer>
+      <section class="footer-section section-mt" data-title="footer-section">
+        <div class="container">
+          <div class="row row-flex align-end justify-center">
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul>
+                <li>
+                  <img src="images/irchadlogowhite.svg" class="" alt="" />
+                </li>
+                <li>4779 Larache Avenue 28306</li>
+                <li><a href="tel:+212 656-525-125">+212 656-525-125</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Programme</a></li>
+                <li><a href="#">Soumissionner un projet</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Nous Contacter</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul>
+                <li>2020 © IRCHAD, All Rights Reserved</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="build/css/main.js"></script>
+    <!-- fin footer -->
+  </body>
+</html>
