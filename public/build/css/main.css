@@ -2546,11 +2546,13 @@ nav.nav-desktop {
 .header-before-stick {
   opacity: 1;
   z-index: 9999;
-  position: relative;
+  width: 100vw;
+  position: absolute;
 }
 
 .header-stick {
-  width: 100%;
+  width: 100vw;
+  z-index: 9998;
   position: fixed !important;
   top: 0;
   left: 0;
@@ -2567,17 +2569,12 @@ nav.nav-desktop {
 
 header {
   z-index: 9999;
-  position: relative;
-}
-
-.padding-home {
-  padding: 1rem 0 8rem 0;
 }
 
 .padding-page {
   padding: 2rem 0 4rem 0;
 }
-.welcome-overlay::before {
+/* .welcome-overlay::before {
   content: "";
   background: url(../../images/welcomebg.svg?ecf67bc9d50e3b5ca1d998307011c086);
   height: 100%;
@@ -2586,9 +2583,8 @@ header {
   top: 0;
   left: 0;
   background-size: 100%;
-  /* filter: blur(20px); */
   z-index: -1;
-}
+} */
 
 .page-overlay::before {
   content: "";
@@ -3373,13 +3369,6 @@ svg {
 }
 
 .welcome-section {
-  position: absolute;
-  top: 0;
   width: 100%;
   z-index: 1;
-  height: 100vh;
-}
-
-.clear-absolute {
-  height: 100vh;
 }

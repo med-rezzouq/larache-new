@@ -73,7 +73,7 @@ button:not(:disabled) {
   content: "";
 }
 
-.slide-1::before {
+/* .slide-1::before {
   content: "";
   background: url(https://miro.medium.com/max/3840/1*ufX5howZNvIopbEMNmAxNQ.png);
   height: 100vh;
@@ -82,7 +82,7 @@ button:not(:disabled) {
   top: 0;
   left: 0;
   background-size: 100%;
-  /* filter: blur(20px); */
+
   z-index: -100;
 }
 
@@ -95,7 +95,7 @@ button:not(:disabled) {
   top: 0;
   left: 0;
   background-size: 100%;
-  /* filter: blur(20px); */
+
   z-index: -100;
 }
 
@@ -108,9 +108,9 @@ button:not(:disabled) {
   top: 0;
   left: 0;
   background-size: 100%;
-  /* filter: blur(20px); */
+
   z-index: -100;
-}
+} */
 
 .carousel-item {
   color: #fff;
@@ -123,18 +123,19 @@ button:not(:disabled) {
   width: 100vw;
   height: 100vh;
 }
-.carousel-item.active img {
+
+.carousel-inner::before {
   content: "";
   background: url(../../images/welcomebg.svg?ecf67bc9d50e3b5ca1d998307011c086);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
 
   left: 0;
   background-size: 100%;
   /* filter: blur(20px); */
-  z-index: -100;
+  z-index: 100;
 }
 
 .slide-1 .row,
@@ -143,6 +144,7 @@ button:not(:disabled) {
   position: absolute;
   top: 20%;
   left: 10%;
+  z-index: 100;
 }
 .carousel-item {
   height: 100vh;
@@ -176,7 +178,6 @@ button:not(:disabled) {
   color: #fff;
   width: 100%;
   background: rgba(252, 252, 252, 0.35);
-  backdrop-filter: blur(10.4878px);
 
   padding: 1rem 1rem;
 }
@@ -291,7 +292,7 @@ button:not(:disabled) {
   top: 27%;
   right: 20%;
   bottom: 0;
-  z-index: 1;
+  z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,7 +353,7 @@ button:not(:disabled) {
   right: 0;
   top: 60%;
   left: 0;
-  z-index: 2;
+  z-index: 200;
   display: flex;
   justify-content: center;
   padding: 0;
