@@ -118,7 +118,16 @@ button:not(:disabled) {
 .carousel-item img {
   background-size: cover;
   position: absolute;
-  top: 0;
+  top: -100%;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-item.active img {
+  background-size: cover;
+  position: absolute;
+  top: 0%;
   z-index: -100;
   width: 100vw;
   height: 100vh;
@@ -159,6 +168,24 @@ button:not(:disabled) {
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+.sticky-bottom {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+  width: 100vw;
+}
+
+.carousel-inner .news-bar {
+  z-index: 200;
+  color: #fff;
+  width: 100%;
+  background: rgba(252, 252, 252, 0.35);
+  margin: 1rem 0rem;
+  padding: 1rem 1rem;
+}
 .carousel-inner .news-bar ul {
   padding: 0;
   margin: 0rem;
@@ -170,27 +197,13 @@ button:not(:disabled) {
   list-style-type: disc;
 }
 
-.carousel-inner .news-bar {
-  position: absolute;
-
-  top: 65%;
-  z-index: 200;
-  color: #fff;
-  width: 100%;
-  background: rgba(252, 252, 252, 0.35);
-
-  padding: 1rem 1rem;
-}
-
 .carousel-inner .events {
-  position: absolute;
   display: flex;
   justify-content: space-around;
-  top: 73%;
-
   z-index: 200;
   color: #fff;
   width: 100%;
+  margin: 1rem 0rem;
 }
 .carousel-inner .events .event-card time b {
   font-size: 1.4rem;
@@ -203,31 +216,20 @@ button:not(:disabled) {
   margin: 0%;
 }
 .carousel-inner .events .event-card {
-  padding: 1rem 0.5rem;
   width: 25%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 10px;
-  background: rgba(252, 252, 252, 0.35);
-  backdrop-filter: blur(10.4878px);
+  padding: 1rem 0.5rem;
   margin: 0 2rem;
 }
 
-.carousel-inner .events .event-cards a {
-  width: max-content;
-  border: 1px solid #fff;
-  padding: 1rem 4rem;
-  border-radius: 7px;
+.primary-bg {
+  border-radius: 10px;
+  background: rgba(252, 252, 252, 0.35);
+  backdrop-filter: blur(10.4878px);
 }
 
-.carousel-inner .events .event-cards a:hover {
-  width: max-content;
-  border: 1px solid #fff;
-  opacity: 0.7;
-  padding: 1rem 4rem;
-  border-radius: 7px;
-}
 .button-lang {
   width: max-content;
   border: 1px solid #fff;
@@ -244,6 +246,7 @@ button:not(:disabled) {
   width: 25%;
   border-radius: 10px;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
