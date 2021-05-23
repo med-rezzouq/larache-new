@@ -2712,7 +2712,7 @@ header {
     top: -1rem;
     height: 100px;
     width: 195px;
-    margin-left: -2rem;
+
     display: inline;
   }
 
@@ -2823,7 +2823,7 @@ a.button-md-light:hover {
 
 .card-box {
   padding: 2rem 2.6rem;
-  background: #fcfcfc;
+  background: #fff;
   width: 100%;
   box-shadow: 0px 28.7703px 52.7455px -35.9628px rgba(60, 132, 240, 0.61);
   border-radius: 18px;
@@ -2915,8 +2915,9 @@ a.button-md-light:hover {
 }
 
 .pourquoi-irchad-section {
-  background: linear-gradient(104.71deg, #7854f7 32.62%, #3c84f0 101.19%);
+  background-image: url(../../images/pourquoi.svg?54ad94431786a86c09e3add918ec0e54);
   color: #fff;
+  background-size: 100%;
 }
 
 .pourquoi-irchad-section article p {

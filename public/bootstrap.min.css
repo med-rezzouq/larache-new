@@ -54,16 +54,17 @@ button:not(:disabled) {
 .carousel {
   top: 0;
   z-index: -100;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  position: relative;
 }
 .carousel.pointer-event {
   touch-action: pan-y;
 }
 .carousel-inner {
-  position: inherit;
-
-  width: 100%;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -72,45 +73,6 @@ button:not(:disabled) {
   clear: both;
   content: "";
 }
-
-/* .slide-1::before {
-  content: "";
-  background: url(https://miro.medium.com/max/3840/1*ufX5howZNvIopbEMNmAxNQ.png);
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 100%;
-
-  z-index: -100;
-}
-
-.slide-2::before {
-  content: "";
-  background: url(https://miro.medium.com/max/3840/1*ufX5howZNvIopbEMNmAxNQ.png);
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 100%;
-
-  z-index: -100;
-}
-
-.slide-3::before {
-  content: "";
-  background: url(https://miro.medium.com/max/3840/1*ufX5howZNvIopbEMNmAxNQ.png);
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 100%;
-
-  z-index: -100;
-} */
 
 .carousel-item {
   color: #fff;
@@ -152,23 +114,28 @@ button:not(:disabled) {
 .slide-3 .row {
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 0%;
   z-index: 100;
 }
 .carousel-item {
   height: 100vh;
   position: relative;
-  display: none;
 
-  float: left;
-  width: 90%;
-  margin-left: auto;
+  display: none;
+  width: 100vw;
 
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
-.sticky-bottom {
+.carousel-item.active {
+  height: 100vh;
+  position: absolute;
+  display: none;
+  top: 0%;
+  width: 100vw;
+}
+.bottom-slider {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -181,7 +148,7 @@ button:not(:disabled) {
 .carousel-inner .news-bar {
   z-index: 200;
   color: #fff;
-  width: 100%;
+  width: 100vw;
   background: rgba(252, 252, 252, 0.35);
   margin: 1rem 0rem;
   padding: 1rem 1rem;
