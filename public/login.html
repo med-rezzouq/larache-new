@@ -16,66 +16,89 @@
   <body>
     <!-- page login -->
     <section class="seconnecter" data-title="soumissionner-section ">
-      <div class="container">
+      <div
+        class="row row-flex justify-center align-center align-md-self-stretch"
+        style="min-height: calc(100vh - 200px)"
+      >
         <div
-          class="row row-flex flex-col justify-center align-center align-md-self-stretch"
-          style="min-height: calc(100vh - 200px)"
+          class="
+            column-6 column-sm-12 column-md-12 column-lg-6 column-xl-6
+            align-self-stretch
+            left-login-col
+            flex-1
+          "
         >
-          <div
-            class="column-9 column-sm-7 column-md-5 column-lg-4 column-xl-4 row-flex flex-col align-center justify-around"
-          >
-            <form action="#" class="w-100">
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <img
-                    src="images/irchadlogo.svg"
-                    class="w-70 w-lg-70 mx-auto dblock"
-                    alt=""
-                  />
-                </div>
-                <div class="px5 px-xxs-2 w-lg-100 w-100"></div>
-                <h3 class="text-center greyBlue">Connectez vous</h3>
+          <img
+            src="images/login-left-img.png"
+            alt=""
+            class="left-login-col-img"
+          />
+        </div>
+        <div
+          class="
+            column-6 column-sm-12 column-md-12 column-lg-6 column-xl-6
+            align-self-stretch
+            right-login-col
+            flex-1
+            row-flex
+            flex-col
+            align-center
+            justify-around
+          "
+        >
+          <form action="#" class="w-100">
+            <div class="field-row field-lg-row px20">
+              <h1 class="text-center primary-title bg-title-purple font-42-600">
+                Connectez vous
+              </h1>
 
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    class="form-input form-lg-input-one"
-                    placeholder="Adresse email"
-                  />
-                </div>
-
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="password"
-                    name="password"
-                    class="form-input form-lg-input-one"
-                    placeholder="Mot de passe"
-                  />
-                </div>
+              <div class="w-lg-100 w-100">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="login-input"
+                  placeholder="Adresse email"
+                />
               </div>
 
               <div class="field-input field-lg-input w-lg-100 w-100">
-                <a
-                  href="#"
-                  class="button-md blueDarkBg white py2 px5 text-center mt8"
-                  style="display: block"
-                >
-                  Se connecter
-                </a>
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  class="login-input"
+                  placeholder="Mot de passe"
+                />
               </div>
-
-              <div class="field-input field-lg-input w-lg-100 w-100 p-relative">
+            </div>
+            <div class="w-100 text-center flex-row justify-center py4">
+              <div class="w-30 p-relative mx-auto">
                 <label class="form-checkbox">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                   <div class="labelmark">Rester connecté</div>
                 </label>
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="field-input field-lg-input w-lg-100 w-100">
+              <a
+                href="#"
+                class="
+                  button-md
+                  blueDarkBg
+                  white
+                  py3
+                  px10
+                  text-center
+                  colored-btn
+                "
+                style="display: block; max-width: max-content; margin: auto"
+              >
+                Se connecter
+              </a>
+            </div>
+          </form>
         </div>
       </div>
     </section>

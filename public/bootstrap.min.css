@@ -61,6 +61,60 @@ button:not(:disabled) {
 .carousel.pointer-event {
   touch-action: pan-y;
 }
+.page-header {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.page-header::after {
+  position: relative;
+  display: block;
+  height: 50vh;
+  clear: both;
+  content: "";
+}
+
+.page-header::before {
+  content: "";
+  background: no-repeat
+    url(../../images/welcomebg.svg?ecf67bc9d50e3b5ca1d998307011c086);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  left: 0;
+  background-size: 100%;
+  /* filter: blur(20px); */
+  z-index: 100;
+}
+
+.page-header-item {
+  color: #fff;
+  height: 100vh;
+
+  width: 100%;
+}
+
+.page-header-item .row {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  margin-top: 6rem;
+
+  z-index: 100;
+}
+
+.page-header-item img {
+  background-size: cover;
+  position: absolute;
+  top: -100%;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+}
+
 .carousel-inner {
   position: relative;
   height: 100vh;
@@ -72,6 +126,20 @@ button:not(:disabled) {
   display: block;
   clear: both;
   content: "";
+}
+
+.carousel-inner::before {
+  content: "";
+  background: url(../../images/welcomebg.svg?ecf67bc9d50e3b5ca1d998307011c086);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  left: 0;
+  background-size: 100%;
+  /* filter: blur(20px); */
+  z-index: 100;
 }
 
 .carousel-item {
@@ -93,20 +161,6 @@ button:not(:disabled) {
   z-index: -100;
   width: 100vw;
   height: 100vh;
-}
-
-.carousel-inner::before {
-  content: "";
-  background: url(../../images/welcomebg.svg?ecf67bc9d50e3b5ca1d998307011c086);
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-
-  left: 0;
-  background-size: 100%;
-  /* filter: blur(20px); */
-  z-index: 100;
 }
 
 .slide-1 .row,
@@ -404,8 +458,8 @@ button:not(:disabled) {
 .dropdown:hover {
   cursor: pointer;
 }
-.dropdown > a,
-.dropdown > button {
+.lang .dropdown > a,
+.lang .dropdown > button {
   width: max-content;
   opacity: 0.7;
   background: transparent;
@@ -469,8 +523,25 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
-.dropdown ul li a {
+.lang .dropdown ul li a {
   text-decoration: none;
   display: block;
   color: #fff;
+}
+
+.lang-resp .dropdown ul li a {
+  text-decoration: none;
+  display: block;
+  color: #3c84f0;
+}
+
+.lang-resp .dropdown > a,
+.lang-resp .dropdown > button {
+  width: max-content;
+  opacity: 0.7;
+  background: transparent;
+  color: #3c84f0;
+  padding: 0.7rem 0.6rem;
+  border-radius: 7px;
+  border: 1px solid #3c84f0;
 }
