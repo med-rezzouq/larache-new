@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/front-office/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="build/css/main.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>IRCHAD LAARACHE</title>
+  </head>
+  <body>
+    <header class="padding-home">
+      <section
+        class="header header-stick header-stick-nojs"
+        style="position: inherit"
+        data-title="header-section"
+      >
+        <div class="container">
+          <div class="row row-flex ht-100 align-center">
+            <div class="column-3 column-xs-2 column-xl-3 row-flex align-center">
+              <a href="./"
+                ><img
+                  src="images/irchadlogo.svg"
+                  class="irchad-logo dnone"
+                  alt="irchad logo"
+                />
+                <img
+                  src="images/irchadlogosticky.svg"
+                  class="irchad-logo-sticky"
+                  alt="irchad logo"
+                />
+              </a>
+              <a href="./" class="row-flex align-center">
+                <img src="images/logo2.svg" class="img-indh" alt="image indh"
+              /></a>
+            </div>
+            <div
+              class="
+                column-9 column-xs-10 column-xl-9
+                row-flex
+                justify-between
+                align-center
+              "
+            >
+              <div class="column-grow flex-row align-center">
+                <nav class="nav-desktop">
+                  <ul class="flex-nav">
+                    <li class="pointer p-relative">
+                      <a href="aporpos.html"> À Propos</a>
+                    </li>
+
+                    <li>
+                      <a href="soumissionner.html">Soumissionner un projet</a>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="pointer p-relative menu">
+                      Médias
+                      <svg
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1L4 4L7 1"
+                          stroke="#ffffff"
+                          id="bottomArrow"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          style="stroke: rgb(60, 132, 240)"
+                        ></path>
+                      </svg>
+                      <ul class="sub-menu-list dnone">
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li>
+                          <a href="apropos.html">Programmes</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a
+                        href="login"
+                        class="
+                          whiteBg
+                          py2
+                          px3
+                          row-flex
+                          align-center
+                          header-login-button
+                          font-13-500
+                          colored-btn
+                          white
+                        "
+                        ><svg
+                          width="12"
+                          height="15"
+                          class="mx2"
+                          viewBox="0 0 12 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.666656 14.6667C0.666656 13.2522 1.22856 11.8956 2.22875 10.8955C3.22895 9.89526 4.5855 9.33335 5.99999 9.33335C7.41448 9.33335 8.77103 9.89526 9.77123 10.8955C10.7714 11.8956 11.3333 13.2522 11.3333 14.6667H9.99999C9.99999 13.6058 9.57856 12.5884 8.82842 11.8383C8.07827 11.0881 7.06086 10.6667 5.99999 10.6667C4.93912 10.6667 3.92171 11.0881 3.17156 11.8383C2.42142 12.5884 1.99999 13.6058 1.99999 14.6667H0.666656ZM5.99999 8.66669C3.78999 8.66669 1.99999 6.87669 1.99999 4.66669C1.99999 2.45669 3.78999 0.666687 5.99999 0.666687C8.20999 0.666687 9.99999 2.45669 9.99999 4.66669C9.99999 6.87669 8.20999 8.66669 5.99999 8.66669ZM5.99999 7.33335C7.47332 7.33335 8.66666 6.14002 8.66666 4.66669C8.66666 3.19335 7.47332 2.00002 5.99999 2.00002C4.52666 2.00002 3.33332 3.19335 3.33332 4.66669C3.33332 6.14002 4.52666 7.33335 5.99999 7.33335Z"
+                            id="userIcon"
+                            fill="#7245B1"
+                            style="fill: rgb(255, 255, 255)"
+                          ></path>
+                        </svg>
+                        Se Connecter</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="column-grow">
+                <ul class="flex-burger">
+                  <li>
+                    <div class="btn-menu">
+                      <span></span>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="flex-nav-lang lang z-9999 lang-resp">
+                  <li class="dropdown">
+                    <button class="white">AR</button>
+                  </li>
+                </ul>
+
+                <nav class="nav-mobile">
+                  <div id="mySidenav" class="sidenav">
+                    <ul
+                      class=""
+                      style="position: absolute; top: 1rem; left: 10px"
+                    >
+                      <li>
+                        <img src="images/irchadlogowhite.svg" class="" alt="" />
+                      </li>
+                    </ul>
+                    <a
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      >×</a
+                    >
+                    <ul class="blueInit px0 mt10">
+                      <li>
+                        <a href="apropos.html">À Propos</a>
+                      </li>
+                      <li>
+                        <a href="https://larache.irchad.ma/programme"
+                          >Programme</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://larache.irchad.ma/project-submission"
+                          >Soumissionner un projet</a
+                        >
+                      </li>
+                      <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
+                      <li>
+                        <a href="https://larache.irchad.ma/contact">Contact</a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="login"
+                          class="mx4 button-md whiteBg blueDark py2 px3"
+                          >Se Connecter</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fin header section  -->
+      <!-- clear absolute  -->
+
+      <!-- clear absolute  -->
+    </header>
+
+    <!-- apropos  -->
+    <section class="actualites mt10" data-title="apropos-section ">
+      <div class="container">
+        <div class="row row-flex align-center">
+          <div
+            class="
+              column-12 column-sm-12 column-md-12 column-lg-6
+              row-flex
+              align-center
+              animate__animated animate__pulse
+              order-1 order-md-0
+              my10
+            "
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M39.9819 6.18891V12.1836C40.0017 13.8136 39.3831 15.3847 38.2622 16.5514C37.1413 17.7181 35.6098 18.3847 34.0049 18.4046H31.5547C30.7246 18.3143 30.0951 17.6029 30.0951 16.7551C30.0951 15.9072 30.7246 15.1958 31.5547 15.1056H33.9307C34.6822 15.1006 35.4008 14.7913 35.9269 14.2464C36.4531 13.7014 36.7435 12.9657 36.7335 12.2025V6.18891C36.7135 4.6253 35.4703 3.36267 33.9307 3.34236H28.0094C26.4614 3.34236 25.2065 4.61681 25.2065 6.18891V15.181C25.1763 16.0928 24.4342 16.813 23.5359 16.8022C23.1043 16.7924 22.6945 16.6074 22.398 16.2886C22.1016 15.9699 21.9432 15.5438 21.9581 15.1056V6.18891C21.9532 4.55575 22.5886 2.98777 23.7239 1.83118C24.8593 0.674588 26.4013 0.0245284 28.0094 0.0245361H33.9307C37.2467 0.104502 39.9133 2.82098 39.9819 6.18891ZM11.9911 0.0245361H6.0698C2.72597 0.0451181 0.0202662 2.79298 0 6.18891V12.2025C0.0203557 15.5953 2.72898 18.3377 6.0698 18.348H11.9911C13.5992 18.353 15.1431 17.7078 16.282 16.5547C17.4208 15.4016 18.0609 13.8356 18.0609 12.2025V6.18891C18.0507 2.78872 15.3391 0.0348869 11.9911 0.0245361ZM14.7943 12.2025C14.8042 12.9657 14.5139 13.7013 13.9877 14.2463C13.4615 14.7913 12.743 15.1006 11.9915 15.1055H6.07016C5.30744 15.1211 4.57142 14.8202 4.03198 14.2724C3.49254 13.7245 3.19629 12.9771 3.21161 12.2025V6.1889C3.21146 5.42405 3.51439 4.69132 4.05214 4.15583C4.58988 3.62035 5.31719 3.32716 6.07016 3.34236H11.9915C13.5352 3.35264 14.7842 4.62108 14.7943 6.1889V12.2025ZM28.0084 21.4962H33.9297C37.2705 21.5064 39.9791 24.2489 39.9995 27.6417V33.6553C39.9792 37.0512 37.2735 39.799 33.9297 39.8196H28.0084C24.6676 39.799 21.9673 37.0481 21.9572 33.6553V27.6417C21.9572 24.2476 24.6664 21.4962 28.0084 21.4962ZM35.918 35.6736C36.4447 35.1387 36.7384 34.4117 36.7334 33.6553V27.6417C36.7334 26.8867 36.4381 26.1627 35.9125 25.6289C35.3868 25.0951 34.6739 24.7951 33.9305 24.7951H28.0092C26.4613 24.7951 25.2064 26.0696 25.2064 27.6417V33.6553C25.2014 34.4117 25.4951 35.1387 26.0218 35.6736C26.5485 36.2086 27.2644 36.5069 28.0092 36.5018H33.9305C34.6754 36.5069 35.3912 36.2086 35.918 35.6736ZM0 33.6364V27.6417C-7.56567e-06 26.0085 0.640079 24.4425 1.77892 23.2895C2.91777 22.1364 4.4617 21.4912 6.0698 21.4962H8.50143C9.12315 21.4286 9.72832 21.7274 10.06 22.2657C10.3917 22.804 10.3917 23.4874 10.06 24.0257C9.72832 24.564 9.12315 24.8628 8.50143 24.7952H6.0698C4.51878 24.7951 3.25857 26.0666 3.24836 27.6417V33.5799C3.2878 35.1424 4.53103 36.3967 6.0698 36.4264H12.0282C12.7748 36.4314 13.4925 36.1337 14.0222 35.5994C14.5518 35.065 14.8497 34.3381 14.8497 33.5799V24.6632C14.7286 23.9973 15.0182 23.3236 15.5813 22.961C16.1444 22.5984 16.8679 22.6197 17.4093 23.0149C17.9507 23.4101 18.2013 24.0999 18.0423 24.7575V33.6364C18.0423 37.0409 15.3248 39.8008 11.9725 39.8008H6.0698C2.74652 39.7308 0.0689493 37.0115 0 33.6364Z"
+                fill="url(#paint0_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="19.9997"
+                  y1="0.0245361"
+                  x2="19.9997"
+                  y2="39.8196"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#3D84F1" />
+                  <stop offset="1" stop-color="#8A4DF1" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <h1
+              class="
+                font-lg-bold font-lg-xxl
+                bg-title-left
+                primary-title
+                m0
+                ml3
+              "
+            >
+              Actualités
+            </h1>
+          </div>
+        </div>
+
+        <div class="row row-flex justify-between align-stretch cards my4">
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-flex justify-between align-stretch cards my4">
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-flex justify-between align-stretch cards my4">
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+              px2
+              mb4
+            "
+          >
+            <div class="card text-center flex flex-col">
+              <div class="flex-1">
+                <img
+                  src="images/actualites-img-card.png"
+                  class="news-image"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 news-body">
+                <time class="font-11-300 greyInit">28-01-2021</time>
+                <b class="font-19-700">Améliorer</b>
+                <p class="font-14-300 greyInit">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam
+                </p>
+                <a
+                  href="#"
+                  class="primary-title font-13-500 flex flex-row align-center"
+                >
+                  Voir plus
+                  <img src="images/right-arrow.svg" alt="" class="ml3" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin apropos -->
+
+    <!-- footer -->
+
+    <footer>
+      <section class="footer-section section-mt" data-title="footer-section">
+        <div class="container">
+          <div class="row row-flex align-end justify-center">
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul>
+                <li>
+                  <img src="images/irchadlogowhite.svg" class="" alt="" />
+                </li>
+                <li>4779 Larache Avenue 28306</li>
+                <li><a href="tel:+212 656-525-125">+212 656-525-125</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Programme</a></li>
+                <li><a href="#">Soumissionner un projet</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Nous Contacter</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul>
+                <li>2020 © IRCHAD, All Rights Reserved</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- fin footer -->
+    <script>
+      var stickyStart = true;
+    </script>
+    <script src="build/css/main.js"></script>
+  </body>
+</html>

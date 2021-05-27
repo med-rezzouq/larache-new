@@ -4,47 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/front-office/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Google fonts -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
-    <script src="build/css/main.js" defer></script>
-    <title>IRCHAD LAARACHE | A propos</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="build/css/main.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>IRCHAD LAARACHE</title>
   </head>
   <body>
-    <header>
-      <section class="header header-before-stick" data-title="header-section">
+    <header class="padding-home">
+      <section
+        class="header header-stick header-stick-nojs"
+        style="position: inherit"
+        data-title="header-section"
+      >
         <div class="container">
           <div class="row row-flex ht-100 align-center">
             <div class="column-3 column-xs-2 column-xl-3 row-flex align-center">
               <a href="./"
-                ><img src="images/irchadlogo.svg" class="" alt=""
-              /></a>
-              <a href="./" class="row-flex align-center"
-                ><img src="images/logo.svg" class="img-indh" alt=""
+                ><img
+                  src="images/irchadlogo.svg"
+                  class="irchad-logo dnone"
+                  alt="irchad logo"
+                />
+                <img
+                  src="images/irchadlogosticky.svg"
+                  class="irchad-logo-sticky"
+                  alt="irchad logo"
+                />
+              </a>
+              <a href="./" class="row-flex align-center">
+                <img src="images/logo2.svg" class="img-indh" alt="image indh"
               /></a>
             </div>
             <div
-              class="column-9 column-xs-10 column-xl-9 row-flex justify-between align-center"
+              class="
+                column-9 column-xs-10 column-xl-9
+                row-flex
+                justify-between
+                align-center
+              "
             >
               <div class="column-grow flex-row align-center">
                 <nav class="nav-desktop">
-                  <ul class="flex-nav blueInit">
-                    <li><a href="apropos.html">À Propos</a></li>
-                    <li><a href="programme.html">Programme</a></li>
+                  <ul class="flex-nav">
+                    <li class="pointer p-relative">
+                      <a href="aporpos.html"> À Propos</a>
+                    </li>
+
                     <li>
-                      <a href="soumissionner.html">Soumissioner un projet</a>
+                      <a href="soumissionner.html">Soumissionner un projet</a>
                     </li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="pointer p-relative menu">
+                      Médias
+                      <svg
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1L4 4L7 1"
+                          stroke="#ffffff"
+                          id="bottomArrow"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          style="stroke: rgb(60, 132, 240)"
+                        ></path>
+                      </svg>
+                      <ul class="sub-menu-list dnone">
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li>
+                          <a href="apropos.html">Programmes</a>
+                        </li>
+                      </ul>
+                    </li>
 
                     <li>
                       <a
-                        href="login.html"
-                        class="button-md white blueDarkBg py2 px3"
-                        >Se connecter</a
+                        href="login"
+                        class="
+                          whiteBg
+                          py2
+                          px3
+                          row-flex
+                          align-center
+                          header-login-button
+                          font-13-500
+                          colored-btn
+                          white
+                        "
+                        ><svg
+                          width="12"
+                          height="15"
+                          class="mx2"
+                          viewBox="0 0 12 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.666656 14.6667C0.666656 13.2522 1.22856 11.8956 2.22875 10.8955C3.22895 9.89526 4.5855 9.33335 5.99999 9.33335C7.41448 9.33335 8.77103 9.89526 9.77123 10.8955C10.7714 11.8956 11.3333 13.2522 11.3333 14.6667H9.99999C9.99999 13.6058 9.57856 12.5884 8.82842 11.8383C8.07827 11.0881 7.06086 10.6667 5.99999 10.6667C4.93912 10.6667 3.92171 11.0881 3.17156 11.8383C2.42142 12.5884 1.99999 13.6058 1.99999 14.6667H0.666656ZM5.99999 8.66669C3.78999 8.66669 1.99999 6.87669 1.99999 4.66669C1.99999 2.45669 3.78999 0.666687 5.99999 0.666687C8.20999 0.666687 9.99999 2.45669 9.99999 4.66669C9.99999 6.87669 8.20999 8.66669 5.99999 8.66669ZM5.99999 7.33335C7.47332 7.33335 8.66666 6.14002 8.66666 4.66669C8.66666 3.19335 7.47332 2.00002 5.99999 2.00002C4.52666 2.00002 3.33332 3.19335 3.33332 4.66669C3.33332 6.14002 4.52666 7.33335 5.99999 7.33335Z"
+                            id="userIcon"
+                            fill="#7245B1"
+                            style="fill: rgb(255, 255, 255)"
+                          ></path>
+                        </svg>
+                        Se Connecter</a
                       >
                     </li>
                   </ul>
@@ -58,33 +158,9 @@
                     </div>
                   </li>
                 </ul>
-                <ul class="flex-nav-lang lang">
-                  <li>
-                    <a
-                      href=""
-                      class="button-lang ar not-active-lang blueDark p2"
-                      >Arabe</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="button-lang fr blueDarkBg white py2 px2-5"
-                      >Français</a
-                    >
-                  </li>
-                </ul>
-
-                <ul class="flex-nav-lang lang-resp">
-                  <li>
-                    <a
-                      href=""
-                      class="button-lang ar not-active-lang blueDark p2"
-                      >AR</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="button-lang fr blueDarkBg white py2 px2-5"
-                      >FR</a
-                    >
+                <ul class="flex-nav-lang lang z-9999 lang-resp">
+                  <li class="dropdown">
+                    <button class="white">AR</button>
                   </li>
                 </ul>
 
@@ -102,22 +178,32 @@
                       href="javascript:void(0)"
                       class="closebtn"
                       onclick="closeNav()"
-                      >&times;</a
+                      >×</a
                     >
                     <ul class="blueInit px0 mt10">
-                      <li><a href="apropos.html">À Propos</a></li>
-                      <li><a href="programme.html">Programme</a></li>
                       <li>
-                        <a href="soumissionner.html">Soumissioner un projet</a>
+                        <a href="apropos.html">À Propos</a>
                       </li>
-                      <li><a href="faq.html">FAQ</a></li>
-                      <li><a href="contact.html">contact</a></li>
+                      <li>
+                        <a href="https://larache.irchad.ma/programme"
+                          >Programme</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://larache.irchad.ma/project-submission"
+                          >Soumissionner un projet</a
+                        >
+                      </li>
+                      <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
+                      <li>
+                        <a href="https://larache.irchad.ma/contact">Contact</a>
+                      </li>
 
                       <li>
                         <a
-                          href="login.html"
+                          href="login"
                           class="mx4 button-md whiteBg blueDark py2 px3"
-                          >Se connecter</a
+                          >Se Connecter</a
                         >
                       </li>
                     </ul>
@@ -129,81 +215,975 @@
         </div>
       </section>
       <!-- fin header section  -->
-      <!-- section d'accueil -->
+      <!-- clear absolute  -->
+
+      <!-- clear absolute  -->
+      <!-- page header section  -->
       <section class="welcome-section section-my" data-title="accueil-section">
-        <div class="container">
-          <div class="row row-flex align-center welcome-overlay">
-            <div
-              class="column-10 column-sm-10column-md-10 row-flex flex-col align-center mx-auto mt10"
-            >
-              <h1 class="section-h1-center text-center">À PROPOS</h1>
-              <p class="greyBlue text-center">
-                <b class="blueInit">IRCHAD </b> est une solution digitale dédiée
-                à l’entreprenariat, afin de créer votre entreprise en suivant un
-                parcours intuitif et ergonomique,étape par étape. Elle a été
-                mise en place par la province de Driouch dans le cadre du 3ème
-                programme initié par l’INDH, « ARIEJ Amélioration du Revenu et
-                Inclusion Économique des Jeunes ».
-              </p>
+        <div>
+          <div id="carouselExampleIndicators">
+            <div class="container">
+              <div class="row row-flex align-center">
+                <div
+                  class="
+                    column-12 column-sm-12 column-md-12 column-lg-6
+                    row-flex
+                    flex-col
+                    align-between
+                    animate__animated animate__pulse
+                    order-1 order-md-0
+                  "
+                >
+                  <h1
+                    class="
+                      font-lg-bold font-lg-xxl
+                      bg-title-left
+                      primary-title
+                      pb4
+                    "
+                  >
+                    À propos
+                  </h1>
+                  <p class="purple font-15">
+                    <b class="font-14-700 lead-26">IRCHAD</b> est une solution
+                    digitale dédiée à l’entreprenariat, pour créer votre
+                    entreprise tout en suivant un parcours intuitif et
+                    ergonomique, étape par étape. Elle a été initiée afin de
+                    viabiliser les projets appuyés par l’INDH, dans le cadre du
+                    3ème programme de sa 3ème phase « ARIEJ Amélioration du
+                    Revenu et Inclusion Économique des Jeunes ».
+                  </p>
+                </div>
+
+                <div
+                  class="
+                    column-12 column-sm-12 column-md-12 column-lg-6
+                    right-col
+                    row-flex
+                    flex-col
+                    align-between
+                    animate__animated animate__pulse
+                    order-1 order-md-0
+                  "
+                >
+                  <svg
+                    id="Calque_1"
+                    data-name="Calque 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="705"
+                    height="588"
+                    viewBox="0 0 705 588"
+                  >
+                    <defs>
+                      <clipPath id="clip-path55">
+                        <path
+                          d="M131.1,116.51H654.93V448.3a50.28,50.28,0,0,1-50.28,50.28H80.83V166.78a50.27,50.27,0,0,1,50.27-50.27Z"
+                          fill="none"
+                        />
+                      </clipPath>
+                      <linearGradient
+                        id="Dégradé_sans_nom"
+                        data-name="Dégradé sans nom"
+                        x1="367.88"
+                        y1="473.49"
+                        x2="367.88"
+                        y2="91.42"
+                        gradientTransform="matrix(1, 0, 0, -1, 0, 590)"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#3d85f1" />
+                        <stop offset="1" stop-color="#8f4af1" />
+                      </linearGradient>
+                      <linearGradient
+                        id="Dégradé_sans_nom_5"
+                        data-name="Dégradé sans nom 5"
+                        x1="78.49"
+                        y1="176.13"
+                        x2="78.49"
+                        y2="2"
+                        gradientTransform="matrix(1, 0, 0, -1, 0, 590)"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#fff" />
+                        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="Dégradé_sans_nom_5-2"
+                        x1="628.02"
+                        y1="478.41"
+                        x2="628.02"
+                        y2="398.08"
+                        xlink:href="#Dégradé_sans_nom_5"
+                      />
+                    </defs>
+                    <g>
+                      <g clip-path="url(#clip-path55)">
+                        <image
+                          width="505"
+                          height="462"
+                          transform="translate(51.25 46.55) scale(1.2)"
+                          xlink:href="images/bg-apropos.png"
+                        />
+                      </g>
+                      <path
+                        d="M80.83,166.78a50.27,50.27,0,0,1,50.27-50.27H654.93V448.3a50.28,50.28,0,0,1-50.27,50.28H80.83Z"
+                        opacity="0.5"
+                        fill="url(#Dégradé_sans_nom)"
+                        style="isolation: isolate"
+                      />
+                    </g>
+                    <rect
+                      y="413.87"
+                      width="156.99"
+                      height="174.13"
+                      fill="url(#Dégradé_sans_nom_5)"
+                    />
+                    <g opacity="0.7">
+                      <ellipse
+                        cx="145.87"
+                        cy="584.66"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="584.66"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="584.66"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="584.66"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="584.66"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="567.54"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="567.54"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="567.54"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="567.54"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="567.54"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="550.42"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="550.42"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="550.42"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="550.42"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="550.42"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="533.3"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="533.3"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="533.3"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="533.3"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="533.3"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="516.18"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="516.18"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="516.18"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="516.18"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="516.18"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="499.06"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="499.06"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="499.06"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="499.06"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="499.06"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="481.94"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="481.94"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="481.94"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="481.94"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="481.94"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="464.82"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="464.82"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="464.82"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="464.82"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="464.82"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="447.7"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="447.7"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="447.7"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="447.7"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="447.7"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="145.87"
+                        cy="430.59"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="128.37"
+                        cy="430.59"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="110.87"
+                        cy="430.59"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="93.38"
+                        cy="430.59"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                      <ellipse
+                        cx="75.88"
+                        cy="430.59"
+                        rx="1.19"
+                        ry="1.16"
+                        fill="#7854f7"
+                      />
+                    </g>
+                    <rect
+                      x="589.82"
+                      y="111.59"
+                      width="76.41"
+                      height="80.33"
+                      fill="url(#Dégradé_sans_nom_5-2)"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="199.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="199.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="199.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="199.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="199.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="180.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="180.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="180.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="180.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="180.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="161.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="161.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="161.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="161.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="161.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="142.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="142.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="142.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="142.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="142.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="123.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="123.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="123.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="123.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="123.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="104.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="104.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="104.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="104.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="104.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="85.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="85.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="85.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="85.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="85.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="66.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="66.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="66.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="66.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="66.37"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="47.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="47.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="47.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="47.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="47.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="684.96"
+                      cy="28.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="665.54"
+                      cy="28.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="646.12"
+                      cy="28.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="626.7"
+                      cy="28.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                    <ellipse
+                      cx="607.28"
+                      cy="28.38"
+                      rx="1.32"
+                      ry="1.29"
+                      fill="#7854f7"
+                      fill-opacity="0.1"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- fin section d'accueil -->
+      <!-- fin page header section  -->
     </header>
 
     <!-- apropos  -->
     <section class="apropos" data-title="apropos-section ">
       <div class="container">
-        <div class="row row-flex justify-between align-stretch cards">
-          <div class="column-10 heading mb10 mx-auto">
+        <img
+          src="images/bg-title-purple.svg"
+          alt=""
+          class="dblock mx-auto my8"
+        />
+        <div class="row row-flex align-stretch cards">
+          <div class="column-10 column-lg-5 heading mx-auto">
             <p class="text-center greyBlue">
               <b class="blueInit">IRCHAD</b> est votre nouvelle boîte à outils
               digitale qui répond à vos besoins pour assurer le continuum de
               création de votre entreprise. A travers IRCHAD, nous allons :
             </p>
           </div>
+        </div>
+        <div class="row row-flex justify-between align-stretch cards">
+          <div class="column-10 heading mb10 mx-auto"></div>
           <div
-            class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3 px2 mb4"
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3
+              px2
+              mb4
+            "
           >
-            <div class="card text-center">
-              <img src="images/ameliorer.svg" alt="" />
-              <p>
-                <b class="greyBlue">Améliorer</b> Améliorer l’orientation des
-                porteurs de projets surtout via le digital
+            <div class="card text-center flex flex-col">
+              <div class="flex-1"><img src="images/compass.svg" alt="" /></div>
+              <p class="flex-1">
+                <b>Améliorer</b> Améliorer l’orientation des porteurs de projets
+                surtout via le digital
               </p>
             </div>
           </div>
           <div
-            class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3 px2 mb4"
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3
+              px2
+              mb4
+            "
           >
-            <div class="card text-center">
-              <img src="images/resoudre.svg" alt="" />
-              <p>
-                <b class="greyBlue">Résoudre</b> Résoudre les problématiques
-                économiques et sociales de la province
+            <div class="card text-center flex flex-col">
+              <div class="flex-1"><img src="images/lamp.svg" alt="" /></div>
+              <p class="flex-1">
+                <b>Résoudre</b> Résoudre les problématiques économiques et
+                sociales de la province
               </p>
             </div>
           </div>
           <div
-            class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3 px2 mb4"
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3
+              px2
+              mb4
+            "
           >
-            <div class="card text-center">
-              <img src="images/faciliter.svg" alt="" />
-              <p>
-                <b class="greyBlue">Faciliter</b> l’intégration des jeunes dans
-                le tissu économique du pays
+            <div class="card text-center flex flex-col">
+              <div class="flex-1"><img src="images/peoples.svg" alt="" /></div>
+              <p class="flex-1">
+                <b>Faciliter</b> l’intégration des jeunes dans le tissu
+                économique du pays
               </p>
             </div>
           </div>
           <div
-            class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3 px2 mb4"
+            class="
+              column-12 column-xs-12 column-md-6 column-lg-4 column-xl-3
+              px2
+              mb4
+            "
           >
-            <div class="card text-center">
-              <img src="images/assurer.svg" alt="" />
-              <p>
-                <b class="greyBlue">Assurer</b> Assurer une meilleure
-                coordination des offres d’accompagnement
+            <div class="card text-center flex flex-col">
+              <div class="flex-1"><img src="images/puzzle.svg" alt="" /></div>
+              <p class="flex-1">
+                <b>Assurer</b> Assurer une meilleure coordination des offres
+                d’accompagnement
               </p>
             </div>
           </div>
@@ -212,6 +1192,539 @@
     </section>
     <!-- fin apropos -->
 
+    <!-- programme ARIEJ -->
+    <section
+      class="welcome-section section-my my15"
+      data-title="accueil-section"
+    >
+      <div>
+        <div id="carouselExampleIndicators">
+          <div class="container">
+            <div class="row row-flex align-center">
+              <div
+                class="
+                  column-12 column-sm-12 column-md-12 column-lg-6
+                  roi-col
+                  row-flex
+                  flex-col
+                  align-between
+                  animate__animated animate__pulse
+                  order-1 order-md-0
+                "
+              >
+                <img src="images/roi.png" alt="" class="roi w-80" />
+              </div>
+
+              <div
+                class="
+                  column-12 column-sm-12 column-md-12 column-lg-6
+                  row-flex
+                  flex-col
+                  align-between
+                  animate__animated animate__pulse
+                  order-1 order-md-0
+                "
+              >
+                <h1
+                  class="
+                    font-lg-bold font-lg-xxl
+                    bg-title-left
+                    primary-title
+                    pb4
+                  "
+                >
+                  Le programme ARIEJ 
+                </h1>
+                <p class="font-15 lead-29 blueInit">
+                  Le programme ARIEJ est la 3ème phase du déploiement de l’INDH
+                  2019-2023. Il a été lancé par sa Majesté le Roi Mohammed VI
+                  que Dieu l’Assiste, le 19 septembre 2018. Ce programme vise
+                  spécifiquement l’amélioration du revenu et inclusion
+                  économique des jeunes qui vise à contribuer à l’amélioration
+                  de la situation économique et sociale des populations
+                  défavorisées, notamment les jeunes par l’accompagnement à
+                  l’emploi, à l’entrepreneuriat ainsi qu’à l’appui aux projets
+                  s’inscrivant dans l’économie sociale et solidaire.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- programme ARIEJ -->
+
+    <!-- Pourquoi irchad -->
+    <section class="section-my py2" data-title="">
+      <div class="programmes-bg-section">
+        <div class="container">
+          <div
+            class="row row-flex align-center justify-center my10 space-x-4 py10"
+          >
+            <div class="column-8 column-md-6 column-lg-4 text-center px2">
+              <h5
+                class="
+                  font-24-400
+                  primary-bg
+                  p4
+                  py8
+                  pointer
+                  p-relative
+                  programme-nav
+                  active-programme
+                "
+                data-id="1"
+              >
+                Appui à l’employabilité
+                <img
+                  src="images/top-arrow.svg"
+                  class="absolute-arrow arrow-top"
+                  alt=""
+                />
+
+                <img
+                  src="images/bottom-arrow.svg"
+                  class="absolute-arrow arrow-botom"
+                  alt=""
+                />
+              </h5>
+            </div>
+            <div class="column-8 column-md-6 column-lg-4 text-center px2">
+              <h5
+                class="
+                  font-24-400
+                  primary-bg
+                  p4
+                  py8
+                  pointer
+                  p-relative
+                  programme-nav
+                "
+                data-id="2"
+              >
+                Appui à l’entreprenariat
+                <img
+                  src="images/top-arrow.svg"
+                  class="absolute-arrow arrow-top"
+                  alt=""
+                />
+
+                <img
+                  src="images/bottom-arrow.svg"
+                  class="absolute-arrow arrow-botom"
+                  alt=""
+                />
+              </h5>
+            </div>
+            <div class="column-8 column-md-6 column-lg-4 text-center px2">
+              <h5
+                class="
+                  font-24-400
+                  primary-bg
+                  p4
+                  py8
+                  pointer
+                  p-relative
+                  programme-nav
+                "
+                data-id="3"
+              >
+                Economie sociale et solidaire
+                <img
+                  src="images/top-arrow.svg"
+                  class="absolute-arrow arrow-top"
+                  alt=""
+                />
+
+                <img
+                  src="images/bottom-arrow.svg"
+                  class="absolute-arrow arrow-botom"
+                  alt=""
+                />
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container faq content" data-content="1">
+        <div class="row row-flex flex-col justify-between align-center cards">
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Introduction</h3>
+              <img
+                src="images/plusicon.svg"
+                class="pointer dnone plusicon"
+                alt=""
+              />
+              <img
+                src="images/minusicon.svg"
+                class="pointer minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dblock">
+              <p>
+                L’INDH entend, dans le cadre de l’aide à l’employabilité relever
+                les défis de l’employabilité des jeunes, à travers le
+                développement des soft-skills et l’aide à l’insertion
+                professionnelle, par la mobilisation des acteurs
+                d’intermédiation professionnelle et ceux du marché de l’emploi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Actions</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <p>
+                Après une étude du marché du marché de l’emploi local, la
+                sensibilisation et le ciblage des bénéficiaires, le profilage du
+                bilan des compétences et l’élaboration d’un programme de
+                formation, deux types de formations vont être proposée aux
+                candidats :
+              </p>
+
+              <ul>
+                <li class="list-disc">
+                  <b>Formation-Employabilité :</b> consiste à proposer une
+                  panoplie de formations en soft-skills destinées à renforcer
+                  les compétences des jeunes en techniques de recherche d’emploi
+                  à travers des ateliers de rédaction de CV et lettre de
+                  motivation, des sessions de préparation aux entretiens
+                  d’embauche et réseautage.
+                </li>
+                <li class="list-disc">
+                  <b>Formation-Insertion : </b>en plus des formations en
+                  compétences techniques, comportementales et linguistiques
+                  demandées sur le marché du travail, les jeunes chercheurs
+                  d’emploi bénéficieront d’une formation dans des métiers en
+                  croissance demandés par le marché de l’emploi. Ainsi, les
+                  jeunes ayant ce type de Formation,bénéficieront d’une
+                  insertion en emploi formel dans un emploi dans lequel il est
+                  déclaré par un organisme employeur.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Critères d’éligibilité</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <ul>
+                <li class="list-disc">
+                  Âgés de 18 à 35 ans. Néanmoins le CPDH peut accorder des
+                  dérogations.
+                </li>
+                <li class="list-disc">En recherche active d’emploi.</li>
+                <li class="list-disc">Résidant dans la Province de Larache.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container faq dnone content" data-content="2">
+        <div class="row row-flex flex-col justify-between align-center cards">
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Introduction</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <p>
+                L’appui à l’entrepreneuriat chez les jeunes vise à promouvoir et
+                développer la culture de l’entrepreneuriat chez les jeunes et
+                encourager les concours d’idées dans les secteurs porteurs et ce
+                à travers :
+              </p>
+
+              <ul>
+                <li class="list-disc">
+                  L’appui à la création d’une nouvelle génération de projets
+                  générateurs de revenu notamment des petites et très petites
+                  entreprises.
+                </li>
+                <li class="list-disc">
+                  La mise en œuvre d’une offre d’appui couvrant de façon
+                  homogène et continue tout le processus d’appui à
+                  l’entrepreneuriat (appui pré et post création).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Actions</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <p>
+                L’accompagnement des jeunes porteurs de projets consiste en le
+                déploiement des 4 missions listées ci-dessous :
+              </p>
+
+              <ul>
+                <li class="list-disc">
+                  <b>Sensibilisation, orientation et information</b> <br />
+                  Écouter, informer, orienter et sensibiliser les jeunes aux
+                  opportunités offertes par l'entreprenariat en tant que source
+                  de revenus et création d'emplois.
+                </li>
+
+                <li class="list-disc">
+                  <b>Appui Pré-création</b> <br />
+                  Accompagner les jeunes porteurs de projets éligibles dans la
+                  préparation de leur projet, afin d’améliorer la qualité du
+                  projet et d'augmenter les chances de succès de leur activité
+                  (formation, appui…).
+                </li>
+                <li class="list-disc">
+                  <b>Appui à la création</b> <br />
+                  Accompagner les jeunes porteurs de projets dans le choix des
+                  structures juridiques adaptées aux spécificités de leurs
+                  projets.
+                </li>
+                <li class="list-disc">
+                  <b>Appui Post-création</b> <br />
+                  Fournir un accompagnement technique aux jeunes entrepreneurs
+                  ayant effectivement démarré l’activité, pour améliorer les
+                  chances de succès de leur projet et augmenter le taux de
+                  survie des entreprises formelles créées.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Parcours du porteur de projet</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <li class="list-disc">
+                <b>Accueil</b> <br />
+                o Remplir les informations de pré-inscription en ligne ou sur
+                place
+              </li>
+
+              <li class="list-disc">
+                <b>Orientation</b> <br />
+                o Entretien de positionnement pour validation de l’inscription
+              </li>
+
+              <li class="list-disc">
+                <b>Formation</b> <br />
+                o Planifier la formation<br />
+                o Exécuter la formation <br />
+                o Évaluer la formation
+              </li>
+
+              <li class="list-disc">
+                <b>Entreprenariat </b> <br />
+                o Accompagnement pré-création <br />
+                o Accompagnement à la création<br />
+                o Accompagnement post-création
+              </li>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Critères d’éligibilité</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <li class="list-disc">
+                <b>Porteurs de projet âgés de 18-45 ans.</b> <br />
+              </li>
+
+              <li class="list-disc">
+                <b>Projets répondant aux critères suivants :</b> <br />
+                o Critères d’ordre économique : création de valeur ajoutée,
+                stabilité des revenus, … <br />
+                o Critères d’ordre social : création d’emploi, conditions de
+                travail, amélioration de la femme, respect des droits de
+                l’enfant, … <br />
+                o Critères d’ordre environnemental : conservation des ressources
+                naturelles, maintien de la biodiversité, …
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container faq dnone content" data-content="3">
+        <div class="row row-flex flex-col justify-between align-center cards">
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Introduction</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <p>
+                Le programme 3 de l’INDH, vise à apporter un accompagnement au
+                profit des porteurs de projets issus de l’analyse des chaines de
+                valeur et des coopératives ainsi que les autres organisations
+                professionnelles œuvrant dans le domaine de l’économie sociale
+                et solidaire. L’intervention de l’INDH dans ce cadre se trouve
+                justifiée par l’intérêt accordé à l’inclusion économique des
+                jeunes et des femmes en leur offrant des opportunités d’emploi
+                et d’auto-emploi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Actions</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone lead-29">
+              <p>
+                Des mesures d’accompagnement spécifiques seront mises en œuvre
+                pour appuyer les coopératives, les groupements d’intérêt
+                économique et les TPMEs existantes et les accompagner dans leur
+                développement à travers :
+              </p>
+
+              <ul class="lead-26">
+                <li class="list-disc">
+                  <b>Appui Technique :</b> concerne d’apporter de l’aide lors de
+                  la création des coopératives ou TPMEs porteurs de projets à
+                  fort impact, ou la mobilisation d’une assistance technique
+                  pour la labellisation et la certification de qualité, et ce de
+                  concerte avec les départements ministériels concernés,
+                </li>
+                <li class="list-disc">
+                  <b>Appui Financier :</b> destinée à appuyer le processus
+                  d’exploitation des coopératives, GIE et TPMEs afin de les
+                  inciter à la création de l’emploi et de l’auto-emploi, en
+                  particulier pour les jeunes. Le soutien financier de l’INDH
+                  est plafonné à 300.000 DH, représentant au maximum une valeur
+                  de 60% du capital investi et doit concerner uniquement les
+                  investissements dans des activités émanant des chaines de
+                  valeurs locales. L’apport du porteur de projet peut être en
+                  numéraire ou en nature. Sont éligibles aux financements les
+                  coopératives dont le nombre de coopérateurs jeunes et femmes
+                  dépassent 30%. Des conventions seront conclues entre le CPDH
+                  et le porteur de projet déterminant les obligations et
+                  résultats à atteindre.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="card row-flex flex-wrap justify-between align-center w-80"
+          >
+            <div class="row-flex justify-between w-100">
+              <h3 class="">Critères d’éligibilité</h3>
+              <img src="images/plusicon.svg" class="pointer plusicon" alt="" />
+              <img
+                src="images/minusicon.svg"
+                class="pointer dnone minusicon"
+                alt=""
+              />
+            </div>
+
+            <div class="cardbody dnone">
+              <ul>
+                <li class="list-disc">
+                  Les coopératives et leurs unions (conforme à la loi 112-12).
+                </li>
+                <li class="list-disc">Les GIE.</li>
+                <li class="list-disc">
+                  Les TPMEs (Société de Personnes et SARL).
+                </li>
+                <li class="list-disc">
+                  Les personnes disposant du statut « Autoentrepreneurs ».
+                </li>
+                <li class="list-disc">
+                  Les jeunes cibles de l’INDH âgés de 18-45 ans.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin Pourquoi irchad -->
+
     <!-- footer -->
 
     <footer>
@@ -219,7 +1732,13 @@
         <div class="container">
           <div class="row row-flex align-end justify-center">
             <div
-              class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4 row-flex flex-col align-center justify-end"
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
             >
               <ul>
                 <li>
@@ -231,7 +1750,13 @@
             </div>
 
             <div
-              class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4 row-flex flex-col align-center justify-end"
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
             >
               <ul>
                 <li><a href="#">À Propos</a></li>
@@ -243,7 +1768,13 @@
             </div>
 
             <div
-              class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4 row-flex flex-col align-center justify-end"
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
             >
               <ul>
                 <li>2020 © IRCHAD, All Rights Reserved</li>
@@ -255,5 +1786,9 @@
     </footer>
 
     <!-- fin footer -->
+    <script>
+      var stickyStart = true;
+    </script>
+    <script src="build/css/main.js"></script>
   </body>
 </html>

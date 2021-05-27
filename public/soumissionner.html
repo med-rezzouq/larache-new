@@ -73,14 +73,8 @@
               <div class="column-grow flex-row align-center">
                 <nav class="nav-desktop">
                   <ul class="flex-nav">
-                    <li>
-                      <a href="https://larache.irchad.ma/a-propos">À Propos</a>
-                    </li>
-                    <li>
-                      <a href="https://larache.irchad.ma/programme"
-                        >Programme</a
-                      >
-                    </li>
+                    <li class="pointer p-relative"><a href=""> À Propos</a></li>
+
                     <li>
                       <a href="https://larache.irchad.ma/project-submission"
                         >Soumissionner un projet</a
@@ -89,6 +83,33 @@
                     <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
                     <li>
                       <a href="https://larache.irchad.ma/contact">Contact</a>
+                    </li>
+
+                    <li class="pointer p-relative menu">
+                      Médias
+                      <svg
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1L4 4L7 1"
+                          stroke="#ffffff"
+                          id="bottomArrow"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <ul class="sub-menu-list dnone">
+                        <li><a href="">Actualités</a></li>
+                        <li>
+                          <a href="https://larache.irchad.ma/programme"
+                            >Programmes</a
+                          >
+                        </li>
+                      </ul>
                     </li>
 
                     <li>
@@ -118,7 +139,7 @@
                             fill="#7245B1"
                           />
                         </svg>
-                        Se Connecter</a
+                        Se connecter</a
                       >
                     </li>
                   </ul>
@@ -133,18 +154,8 @@
                   </li>
                 </ul>
                 <ul class="flex-nav-lang lang z-9999">
-                  <li>
-                    <span class="dropdown">
-                      <button class="font-bold white">AR</button>
-                      <label>
-                        <input type="checkbox" />
-                        <ul>
-                          <li>AR</li>
-
-                          <li>FR</li>
-                        </ul>
-                      </label>
-                    </span>
+                  <li class="dropdown">
+                    <button class="white">AR</button>
                   </li>
                 </ul>
 
@@ -189,7 +200,7 @@
                         <a
                           href="login"
                           class="mx4 button-md whiteBg blueDark py2 px3"
-                          >Se Connecter</a
+                          >Se connecter</a
                         >
                       </li>
                     </ul>
@@ -206,42 +217,56 @@
       <!-- clear absolute  -->
       <!-- page header section  -->
       <section class="welcome-section section-my" data-title="accueil-section">
-        <div>
-          <div id="carouselExampleIndicators">
-            <div class="page-header">
-              <div class="page-header-item">
-                <div class="container">
-                  <div class="row row-flex align-center">
-                    <div
-                      class="
-                        column-12 column-sm-12 column-md-6
-                        row-flex
-                        flex-col
-                        align-between
-                        animate__animated animate__pulse
-                        order-1 order-md-0
-                      "
-                    >
-                      <h1 class="font-lg-bold font-lg-xxl bg-title-left pb4">
-                        Soumissionner un Projet
-                      </h1>
-                      <p class="">
-                        Vous avez trouvé l’idée de votre futur projet?
-                        Félicitations, vous êtes au bon endroit. D’abord,
-                        veuillez remplir vos informations personnelles et
-                        professionnelles. Ensuite, vous renseignez les
-                        informations de votre futur projet. Finalement, vous
-                        pouvez soumissionner votre projet. Une commission
-                        d’experts se chargera d’étudier votre dossier et vous
-                        contactera dans les plus brefs délais.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div class="page-header">
+          <div class="page-header-item">
+            <div class="container">
+              <div class="row row-flex align-center pb6">
+                <div
+                  class="
+                    column-12 column-sm-12 column-md-9
+                    row-flex
+                    flex-col
+                    align-between
+                    animate__animated animate__pulse
+                    order-1 order-md-0
+                    px8
+                  "
+                >
+                  <h1 class="font-lg-bold font-lg-xxl bg-title-left pb4">
+                    Soumissionner un Projet
+                  </h1>
+                  <p class="lead-29 font-16-500">
+                    Vous avez trouvé l’idée de votre futur projet?
+                    <br />
+                    Félicitations, vous êtes au bon endroit. D’abord, veuillez
+                    remplir vos informations personnelles et professionnelles.
+                    Ensuite, vous renseignez les informations de votre futur
+                    projet.
+                    <br />
+                    Finalement, vous pouvez soumissionner votre projet. Une
+                    commission d’experts se chargera d’étudier votre dossier et
+                    vous contactera dans les plus brefs délais.
+                  </p>
 
-                <img src="images/slide1.png" />
+                  <svg
+                    width="22"
+                    height="14"
+                    viewBox="0 0 22 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2L11 11L20 2"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
+
+            <img src="images/slide1.png" />
           </div>
         </div>
       </section>
@@ -257,156 +282,322 @@
               >1</a
             >
           </div>
+
           <div
             class="column-11 row-flex flex-col align-center justify-around pb6"
           >
             <div class="px5 px-xxs-2 w-lg-100 w-100">
-              <h2 class="primary-title font-35-600">
+              <h2 class="primary-title font-35-600 m0">
                 Informations personnelles
               </h2>
-              <p class="purple">Renseignez vos informations personnelles</p>
+              <p class="purpleInit">Renseignez vos informations personnelles</p>
             </div>
-            <form action="#" class="w-100">
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-40 w-100">
-                  <select
-                    type="text"
-                    id="civilite"
-                    class="form-input form-lg-input"
-                  >
-                    <option value="">Votre civilité</option>
-                    <option value="Mr">Mr</option>
-                    <option value="Mme">Mme</option>
-                    <option value="Mlle">Mlle</option>
-                  </select>
-                </div>
+            <div class="w-100 step">
+              <div class="step-content one">
+                <fieldset class="fields-section form-section">
+                  <span class="source-field">
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-40 w-100">
+                        <select
+                          type="text"
+                          name="member[0][civility]"
+                          id="member[0]civil"
+                          class="form-input form-lg-input"
+                          data-parsley-group="block-0"
+                        >
+                          <option value="" selected="" disabled="">
+                            Votre civilité...
+                          </option>
+                          <option value="0">Mr</option>
+                          <option value="1">Mme</option>
+                          <option value="2">Mlle</option>
+                        </select>
+                      </div>
+                      <div class="field-input field-lg-input w-lg-70 w-100">
+                        <input
+                          type="text"
+                          name="member[0][first_name]"
+                          id="member[0]first_name"
+                          required=""
+                          class="form-input form-lg-input"
+                          placeholder="Votre prénom..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          text-right
+                          w-lg-70 w-100
+                        "
+                      >
+                        <input
+                          type="text"
+                          name="member[0][last_name]"
+                          id="member[0]last_name"
+                          required=""
+                          class="form-input form-lg-input"
+                          placeholder="Votre nom de famille..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-75 w-100">
+                        <input
+                          type="text"
+                          name="member[0][identity_number]"
+                          id="member[0]identity_number"
+                          required=""
+                          class="form-input form-lg-input"
+                          placeholder="Votre numéro de CIN..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-75 w-100
+                          text-right
+                        "
+                      >
+                        <input
+                          type="date"
+                          name="member[0][birth_date]"
+                          id="member[0]birth_date"
+                          required=""
+                          class="form-input form-lg-input"
+                          placeholder="Votre date de naissance..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          name="member[0][marital-status]"
+                          id="member[0]marital-status"
+                          class="form-input form-lg-input"
+                          data-parsley-group="block-0"
+                        >
+                          <option value="" selected="" disabled="">
+                            Votre situation familiale...
+                          </option>
+                          <option value="Célibataire">Célibataire</option>
+                          <option value="Marié(e)">Marié(e)</option>
+                          <option value="Divorcé(e)">Divorcé(e)</option>
+                          <option value="Veuf(e)">Veuf(e)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <input
+                          type="text"
+                          name="member[0][address]"
+                          id="member[0]address"
+                          required=""
+                          class="form-input form-lg-input-one"
+                          placeholder="Votre adresse..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-30 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          name="member[0][township_id]"
+                          id="member[0]township_id"
+                          class="form-input form-lg-input"
+                          data-parsley-group="block-0"
+                        >
+                          <option value="" selected="" disabled="">
+                            Votre commune...
+                          </option>
+                          <option value="9">Ayacha</option>
 
-                <div class="field-input field-lg-input w-lg-70 w-100">
-                  <input
-                    type="text"
-                    id="name"
-                    class="form-input form-lg-input haserror"
-                    placeholder="Votre nom"
-                  />
-                </div>
+                          <option value="10">Bni Arouss</option>
 
-                <div
-                  class="field-input field-lg-input text-right w-lg-70 w-100"
-                >
-                  <input
-                    type="text"
-                    id="name"
-                    class="form-input form-lg-input"
-                    placeholder="Votre nom"
-                  />
-                </div>
+                          <option value="13">Bni Garfett</option>
+
+                          <option value="6">Bou Jedaane</option>
+
+                          <option value="5">Ksar Bjir</option>
+
+                          <option value="2">Ksar El Kébir</option>
+
+                          <option value="3">Laaouamra</option>
+
+                          <option value="1">Larache</option>
+
+                          <option value="18">Oulad Ouchih</option>
+
+                          <option value="16">Rissana Chamalia</option>
+
+                          <option value="17">Rissana Janoubia</option>
+
+                          <option value="15">Sahel</option>
+
+                          <option value="19">Souaken</option>
+
+                          <option value="8">Souk L'Qolla</option>
+
+                          <option value="20">Souk Tolba</option>
+
+                          <option value="7">Tatoft</option>
+
+                          <option value="11">Tazroute</option>
+
+                          <option value="14">Zaaroura</option>
+
+                          <option value="4">Zouada</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <input
+                          type="email"
+                          name="member[0][email]"
+                          id="member[0]email"
+                          required=""
+                          class="form-input form-lg-input"
+                          placeholder="Votre email..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <input
+                          type="phone"
+                          name="member[0][phone]"
+                          id="member[0]phone"
+                          required=""
+                          class="form-input form-lg-input"
+                          placeholder="Votre téléphone..."
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <select
+                          name="member[0][reduced_mobility]"
+                          id="member[0]reduced_mobility"
+                          class="form-input form-lg-input-one"
+                          data-parsley-group="block-0"
+                        >
+                          <option value="" selected="" disabled="">
+                            Êtes-vous une personne à mobilité réduite?
+                          </option>
+                          <option value="Non">Non</option>
+                          <option value="Handicap auditif">
+                            Handicap auditif
+                          </option>
+                          <option value="Handicap vocal">Handicap vocal</option>
+                          <option value="Handicap moteur">
+                            Handicap moteur
+                          </option>
+                          <option value="Handicap visuel">
+                            Handicap visuel
+                          </option>
+                          <option value="Handicap mental">
+                            Handicap mental
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        flex flex-col
+                        sm-flex-row
+                        align-center
+                        justify-start
+                      "
+                    >
+                      <div class="field-input field-lg-input w-sm-25 w-100">
+                        <input
+                          type="button"
+                          class="
+                            submitBnt
+                            add-field
+                            pointer
+                            white
+                            colored-btn
+                            py2
+                            px5
+                            ml0
+                          "
+                          value="+"
+                          data-parsley-group="block-0"
+                        />
+                      </div>
+
+                      <div class="w-sm-75 w-100">
+                        <input
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                          name="defaultCheck1"
+                          class="defaultCheck1 mr2"
+                          data-parsley-group="block-0"
+                        />
+                        <label for="defaultCheck1" class="font-13-400 grey"
+                          >Je certifie l'exactitude des données renseignées et
+                          j'accepte les <a href="#">termes et conditions.</a>.
+                        </label>
+                      </div>
+                    </div>
+                  </span>
+                  <div class="dynamic-fields">
+                    <!-- Dynamic fielfd will be cloned here -->
+                  </div>
+
+                  <div class="field-row text-center py3">
+                    <div
+                      class="
+                        field-input field-lg-input
+                        w-lg-100 w-100
+                        text-center
+                      "
+                    >
+                      <input
+                        type="button"
+                        name="next"
+                        class="
+                          submitBnt
+                          btn btn-custom
+                          next
+                          colored-btn
+                          white
+                          py2
+                          px5
+                          mx2
+                          pointer
+                        "
+                        value="Suivant"
+                        data-parsley-group="block-0"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
               </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-75 w-100">
-                  <input
-                    type="text"
-                    id="cin"
-                    class="form-input form-lg-input"
-                    placeholder="Votre numéro CIN"
-                  />
-                </div>
-                <div
-                  class="field-input field-lg-input w-lg-75 w-100 text-right"
-                >
-                  <input
-                    type="text"
-                    id="naissance"
-                    class="form-input form-lg-input"
-                    placeholder="jj/mm/aa"
-                  />
-                </div>
-                <div
-                  class="
-                    field-input
-                    select
-                    field-lg-input
-                    w-lg-100 w-100
-                    text-right
-                  "
-                >
-                  <select
-                    type="text"
-                    id="stiuationFamilial"
-                    class="form-input form-lg-input"
-                  >
-                    <option value="">Votre situation familiale</option>
-                    <option value="Mr">Mr</option>
-                    <option value="Mme">Mme</option>
-                    <option value="Mlle">Mlle</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="adresse"
-                    class="form-input form-lg-input-one"
-                    placeholder="Votre adresse"
-                  />
-                </div>
-
-                <div
-                  class="field-input field-lg-input w-lg-30 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="commune"
-                    class="form-input form-lg-input"
-                  >
-                    <option value="">Votre commune</option>
-                    <option value="Mr">Driouch</option>
-                    <option value="Mme">Midar</option>
-                    <option value="Mlle">Ben taieb</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="email"
-                    class="form-input form-lg-input"
-                    placeholder="Votre adresse email"
-                  />
-                </div>
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <input
-                    type="text"
-                    id="tel"
-                    class="form-input form-lg-input"
-                    placeholder="Votre numéro de téléphone"
-                  />
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="mobilite"
-                    class="form-input form-lg-input-one w-100"
-                    placeholder="Êtes vous d'une mobilité réduite?"
-                  />
-                </div>
-              </div>
-
-              <div class="field-row text-center">
-                <a href="#" class="button-md colored-btn white py2 px5"
-                  >Suivant</a
-                >
-              </div>
-            </form>
+            </div>
           </div>
         </div>
 
@@ -416,273 +607,350 @@
               >2</a
             >
           </div>
+
           <div
             class="column-11 row-flex flex-col align-center justify-around pb6"
           >
             <div class="px5 px-xxs-2 w-lg-100 w-100 pb6">
-              <h2 class="primary-title font-35-600">
+              <h2 class="primary-title font-35-600 m0">
                 Informations professionnelles
               </h2>
-              <p class="purple">Renseignez vos informations professionnelles</p>
+              <p class="purpleInit">
+                Renseignez vos informations professionnelles
+              </p>
             </div>
-
-            <form action="#" class="w-100">
+            <div class="w-100 step">
               <div class="px5 px-xxs-2 w-lg-100 w-100 py4">
-                <h3 class="purple">Niveau scolaire</h3>
-                <p class="second-par purple">Renseignez vos diplômes</p>
+                <h3>Formation</h3>
+                <p class="second-par purpleInit">Renseignez vos diplômes</p>
               </div>
+              <div class="step-content two w-100">
+                <fieldset class="fs form-section">
+                  <span class="sf">
+                    <div class="fields-section">
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-70 w-100">
+                          <select
+                            name="member[0][degrees][0][diplome_type]"
+                            id="diplome_type"
+                            class="form-input form-lg-input"
+                            data-parsley-group="block-1"
+                          >
+                            <option value=" " selected="" disabled="">
+                              Type de diplôme
+                            </option>
+                            <option selected="" value="Aucun">Aucun</option>
+                            <option value="Brevet">Brevet</option>
+                            <option value="Bac">Bac</option>
+                            <option value="Bac+2, Bac+3, Bac+5 et plus">
+                              Bac+2, Bac+3, Bac+5 et plus
+                            </option>
+                          </select>
+                        </div>
+                        <div class="field-input field-lg-input w-lg-70 w-100">
+                          <input
+                            type="text"
+                            name="member[0][degrees][0][annee]"
+                            id="annee"
+                            class="form-input form-lg-input-one"
+                            placeholder="Année d'obtention..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div
+                          class="
+                            field-input field-lg-input
+                            text-right
+                            w-lg-100 w-100
+                          "
+                        >
+                          <input
+                            name="member[0][degrees][0][etablissement]"
+                            id="etablissement"
+                            class="form-input form-lg-input"
+                            placeholder="Établissement..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div
+                          class="
+                            field-input field-lg-input
+                            text-right
+                            w-lg-100 w-100
+                          "
+                        >
+                          <input
+                            name="member[0][degrees][0][filiere]"
+                            id="filiere"
+                            class="form-input form-lg-input"
+                            placeholder="Filière..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-10 w-10">
+                          <input
+                            type="button"
+                            name="add-field"
+                            id="add-deg"
+                            class="
+                              btn-custom
+                              add-field
+                              colored-btn
+                              white
+                              py2
+                              px5
+                              mr-lg-3
+                              ml0
+                              pointer
+                            "
+                            value="+"
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                      </div>
 
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-70 w-100">
-                  <input
-                    type="text"
-                    id="diplome"
-                    name="diplome"
-                    class="form-input form-lg-input"
-                    placeholder="Type de diplôme..."
-                  />
-                </div>
+                      <div class="dynamic-fields">
+                        <!-- Dynamic fielfd will be cloned here -->
+                      </div>
+                    </div>
+                    <div class="fields-section">
+                      <div class="px5 px-xxs-2 w-lg-100 w-100 py8 pb4">
+                        <h3>Experience Professionnelle</h3>
+                        <p class="second-par purpleInit">
+                          Renseignez vos experiences professionnelles
+                        </p>
+                      </div>
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            name="member[0][professional_experience][0][value]"
+                            id="du"
+                            class="form-input form-lg-input"
+                            placeholder="Du..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            name="member[0][professional_experience][0][rate]"
+                            id="au"
+                            class="form-input form-lg-input"
+                            placeholder="Au..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            name="member[0][professional_experience][0][label]"
+                            id="poste"
+                            class="form-input form-lg-input"
+                            placeholder="Poste..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            name="member[0][professional_experience][0][duration]"
+                            id="organisme"
+                            class="form-input form-lg-input"
+                            placeholder="Organisme..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            name="member[0][professional_experience][0][organisme]"
+                            id="mission"
+                            class="form-input form-lg-input-one"
+                            placeholder="Mission..."
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-10 w-10">
+                          <input
+                            type="button"
+                            name="add-field"
+                            id="add-deg"
+                            class="
+                              btn-custom
+                              add-field
+                              colored-btn
+                              white
+                              py2
+                              px5
+                              mr-lg-3
+                              ml0
+                              pointer
+                            "
+                            value="+"
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                      </div>
+                      <div class="dynamic-fields">
+                        <!-- Dynamic fielfd will be cloned here -->
+                      </div>
+                    </div>
 
-                <div class="field-input field-lg-input w-lg-70 w-100">
-                  <input
-                    type="text"
-                    id="anneDiplme"
-                    name="anneDiplome"
-                    class="form-input form-lg-input-one"
-                    placeholder="Année d'obtention..."
-                  />
-                </div>
+                    <div class="px5 px-xxs-2 w-lg-100 w-100 py8 pb4">
+                      <h3>Compétences développées</h3>
+                      <p class="second-par purpleInit">
+                        Renseignez vos Compétences développées
+                      </p>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <textarea
+                          name="member[0][professional_competences]"
+                          id="competences"
+                          class="form-input form-lg-input-one"
+                          cols="30"
+                          rows="7"
+                          placeholder="Vos Compétences développées"
+                          data-parsley-group="block-1"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="px5 px-xxs-2 w-lg-100 w-100 py8 pb4">
+                      <h3>Situation actuelle</h3>
+                      <p class="second-par purpleInit">
+                        Renseignez vos Situation actuelle
+                      </p>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          name="member[0][activity]"
+                          id="member[0]activity"
+                          class="logical-parent form-input form-lg-input-one"
+                          data-parsley-group="block-1"
+                        >
+                          <option value="" selected="" disabled="">
+                            Actuellement, êtes-vous en activité ?
+                          </option>
+                          <option value="Oui">Oui</option>
+                          <option value="Non">Non</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="fields-section logical-fields">
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            id="member[0]activity_desc"
+                            name="member[0][activity_desc]"
+                            class="form-input form-lg-input-one"
+                            placeholder="Dans quel secteur? Depuis combien de temps?"
+                            data-parsley-group="block-1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          name="member[0][chomage]"
+                          id="member[0]chomage"
+                          class="form-input form-lg-input-one"
+                          data-parsley-group="block-1"
+                        >
+                          <option value="" selected="" disabled="">
+                            Êtes-vous en recherche d'opportunité?
+                          </option>
+                          <option value="Oui">Oui</option>
+                          <option value="Non">Non</option>
+                        </select>
+                      </div>
+                    </div>
 
-                <div
-                  class="field-input field-lg-input text-right w-lg-100 w-100"
-                >
-                  <input
-                    type="text"
-                    id="name"
-                    class="form-input form-lg-input"
-                    placeholder="Établissement..."
-                  />
-                </div>
+                    <div class="field-input field-lg-input w-lg-10 w-10">
+                      <input
+                        type="button"
+                        name="add-field"
+                        class="
+                          submitBnt
+                          btn btn-custom
+                          add-field
+                          ml-sf
+                          colored-btn
+                          white
+                          py2
+                          px5
+                          ml0
+                          pointer
+                        "
+                        value="+"
+                        data-parsley-group="block-1"
+                      />
+                    </div>
+                  </span>
+                  <div class="df">
+                    <!-- Dynamic fielfd will be cloned here -->
+                  </div>
+                </fieldset>
 
-                <div class="field-input field-lg-input w-lg-10 w-10">
-                  <a
-                    href="#"
-                    class="button-md colored-btn white py2 px5 mr-lg-3 ml3"
-                    >+</a
+                <div class="field-row text-center py4">
+                  <div
+                    class="
+                      field-input field-lg-input
+                      w-lg-100 w-100
+                      text-center
+                    "
                   >
-                </div>
-              </div>
-              <div class="px5 px-xxs-2 w-lg-100 w-100 py8 pb4">
-                <h3 class="purple">Stage</h3>
-                <p class="second-par purple">
-                  Renseignez vos experiences professionnelles
-                </p>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="debutExperience"
-                    name="debut_experience"
-                    class="form-input form-lg-input"
-                    placeholder="Du..."
-                  />
-                </div>
-
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="finExperience"
-                    name="fin_experience"
-                    class="form-input form-lg-input"
-                    placeholder="Au..."
-                  />
-                </div>
-
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="poste"
-                    name="poste"
-                    class="form-input form-lg-input"
-                    placeholder="Poste..."
-                  />
-                </div>
-
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="organisme"
-                    name="organisme"
-                    class="form-input form-lg-input"
-                    placeholder="Organisme..."
-                  />
-                </div>
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="mission"
-                    name="mission"
-                    class="form-input form-lg-input-one"
-                    placeholder="Mission..."
-                  />
-                </div>
-
-                <div class="field-input field-lg-input w-lg-10 w-10">
-                  <a
-                    href="#"
-                    class="button-md colored-btn white py2 px5 mr-lg-3 ml0"
-                    >+</a
-                  >
-                </div>
-              </div>
-
-              <div class="px5 px-xxs-2 w-lg-100 w-100 py8 pb4">
-                <h3 class="purple">Compétences développées</h3>
-                <p class="second-par purple">
-                  Renseignez vos Compétences développées
-                </p>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <textarea
-                    name="competences"
-                    id="competences"
-                    class="form-input form-lg-input-one"
-                    cols="30"
-                    rows="7"
-                    placeholder="Vos compétences développées..."
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="px5 px-xxs-2 w-lg-100 w-100 py8 pb4">
-                <h3 class="purple">Situation actuelle</h3>
-                <p class="second-par purple">
-                  Renseignez votre situation actuelle
-                </p>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    name="enActivite"
-                    id="en_activite"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="">En activité?</option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-
-                  <div class="field-input field-lg-input w-lg-100 w-100">
                     <input
-                      type="text"
-                      id="dureeActivite"
-                      name="duree_activite"
-                      class="form-input form-lg-input-one"
-                      placeholder="Depuis combien de temps?"
+                      type="button"
+                      name="previous"
+                      class="
+                        submitBnt
+                        btn btn-custom
+                        previous
+                        colored-btn
+                        white
+                        py2
+                        px5
+                        pointer
+                      "
+                      value="Précédent"
+                    />
+                    <input
+                      type="button"
+                      name="next"
+                      class="
+                        submitBnt
+                        btn btn-custom
+                        next
+                        colored-btn
+                        white
+                        py2
+                        px5
+                        mx2
+                        pointer
+                      "
+                      value="Suivant"
                     />
                   </div>
                 </div>
               </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="activiteFormelle"
-                    name="activite_formelle"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="">
-                      Exercez-vous une activité informelle ou informelle?
-                    </option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-
-                  <div class="field-input field-lg-input w-lg-100 w-100">
-                    <input
-                      type="text"
-                      id="secteurActiviteInformelle"
-                      name="secteur_activite_informelle"
-                      class="form-input form-lg-input-one"
-                      placeholder="Dans quel secteur?"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="opportuniteRecherche"
-                    name="opportunite_recherche"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="">
-                      Êtes vous en recherche d'opportunité?
-                    </option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-
-                  <div class="field-input field-lg-input w-lg-100 w-100">
-                    <input
-                      type="text"
-                      id="dureeOpportuniteRecherche"
-                      name="duree_opportunite_recherche"
-                      class="form-input form-lg-input-one"
-                      placeholder="Depuis combien de mois?"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="vousEtesEnFormation"
-                    name="vousEtesEnFormation"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="">Êtes vous en formation?</option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-
-                  <div class="field-input field-lg-input w-lg-100 w-100">
-                    <input
-                      type="text"
-                      id="enFormationDomaine"
-                      name="en_formation_domaine"
-                      class="form-input form-lg-input-one"
-                      placeholder="Dans quel domaine ?"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="field-row text-center">
-                <a href="#" class="button-md colored-btn white py2 px5"
-                  >Suivant</a
-                >
-              </div>
-            </form>
+            </div>
           </div>
         </div>
 
@@ -692,214 +960,638 @@
               >3</a
             >
           </div>
+
           <div
-            class="column-11 row-flex flex-col align-center pb6 justify-around"
+            class="
+              column-11
+              row-flex
+              flex-col
+              align-center align-center
+              pb6
+              justify-around
+            "
           >
             <div class="px5 px-xxs-2 w-lg-100 w-100">
-              <h2 class="primary-title font-35-600">
+              <h2 class="primary-title font-35-600 m0">
                 Informations Sur Le Projet
               </h2>
-              <p class="purple">Renseignez les détails de votre projet.</p>
+              <p class="purpleInit">Renseignez les détails de votre projet.</p>
             </div>
-            <form action="#" class="w-100">
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <select
-                    type="text"
-                    id="etatAvancement"
-                    name="etat_avancement"
-                    class="form-input form-lg-input"
-                  >
-                    <option value="0" selected disabled>
-                      Quel est l'état d'avancement de votre projet?
-                    </option>
-                    <option value="1">Pas encore lancé</option>
-                    <option value="2">En cours d'étude</option>
-                    <option value="3">Economie informelle</option>
-                    <option value="4">
-                      Entreprise qui nécessite le développement
-                    </option>
-                  </select>
-                </div>
-
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
+            <div class="w-100 step">
+              <div class="step-content three w-100">
+                <fieldset
+                  id="last-fieldset"
+                  class="fields-section form-section source-field"
                 >
-                  <select
-                    type="text"
-                    id="ideeOrigine"
-                    name="idee_origine"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="0" selected disabled>
-                      D'où vient l'idée du projet?
-                    </option>
-                    <option value="1">Formation</option>
-                    <option value="2">Expérience</option>
-                    <option value="3">Autre</option>
-                  </select>
-                </div>
+                  <span class="source-field">
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <select
+                          type="text"
+                          id="etatAvancement"
+                          name="etat_avancement"
+                          class="form-input form-lg-input"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            etat d'avancement de projet
+                          </option>
+                          <option value="Pas encore lancé / Idée">
+                            Pas encore lancé
+                          </option>
+                          <option value="En cours d'étude">
+                            En cours d'étude
+                          </option>
+                          <option value="Economie informelle">
+                            Economie informelle
+                          </option>
+                          <option
+                            value="Entreprise qui nécessite le développement"
+                          >
+                            Entreprise qui nécessite le développement
+                          </option>
+                        </select>
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          id="ideeOrigine"
+                          name="idee_origine"
+                          class="form-input form-lg-input-one"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            D'où vient l'idée du projet
+                          </option>
+                          <option value="Formation">Formation</option>
+                          <option value="Expérience ">Expérience</option>
+                          <option value="Autre">Autre</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <input
+                          type="text"
+                          id="titreProjet"
+                          name="titre_projet"
+                          class="form-input form-lg-input-one"
+                          placeholder="Titre de votre projet..."
+                          data-parsley-group="block-2"
+                        />
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-30 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          id="secteurActivite"
+                          name="secteur_activite"
+                          class="form-input form-lg-input logical-parent"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" disabled="" selected="">
+                            Secteur d'activité...
+                          </option>
+
+                          <optgroup label="Agriculture">
+                            <option value="12">apiculture</option>
+                            <option value="13">aviculture</option>
+                            <option value="14">oléoculture</option>
+                            <option value="21">Cuniculture</option>
+                            <option value="28">Amandier</option>
+                            <option value="29">Champignons</option>
+                            <option value="30">Elevage d'ovins</option>
+                            <option value="31">Elevage de bovins</option>
+                            <option value="32">Elevage de caprins</option>
+                            <option value="33">Figuier de Barbarie</option>
+                            <option value="34">Figuier</option>
+                            <option value="35">Héliciculture</option>
+                            <option value="36">Lait</option>
+                            <option value="38">Fromagerie artisanale</option>
+                            <option value="39">Oléiculture</option>
+                            <option value="40">
+                              Plantes aromatique et médicinales
+                            </option>
+                            <option value="41">Pépinière</option>
+                            <option value="42">Autre - Agriculture</option>
+                          </optgroup>
+
+                          <optgroup label="Artisanat">
+                            <option value="19">menuiserie alu</option>
+                            <option value="43">Vannerie</option>
+                            <option value="44">Couture</option>
+                            <option value="45">
+                              Electricité et plomberie de Bâtiment
+                            </option>
+                            <option value="46">Ferronnerie</option>
+                            <option value="47">Maroquinerie</option>
+                            <option value="48">Menuiserie Bois</option>
+                            <option value="49">Peinture Bâtiment</option>
+                            <option value="50">Construction bâtiment</option>
+                            <option value="51">Platrier</option>
+                            <option value="52">Tapisserie</option>
+                            <option value="53">Tissage et broderie</option>
+                            <option value="54">Tapis</option>
+                            <option value="55">
+                              Boulangerie/petite restauration
+                            </option>
+                            <option value="56">
+                              Fabrication de savon artisanale
+                            </option>
+                            <option value="57">Coiffure et esthétique</option>
+                            <option value="58">Autre - Artisanat</option>
+                          </optgroup>
+
+                          <optgroup label="pêche">
+                            <option value="17">peche artisanale</option>
+                            <option value="18">peche moderne</option>
+                            <option value="59">Aquaculture</option>
+                            <option value="60">
+                              Conditionnement et transformation des produits de
+                              la mer
+                            </option>
+                            <option value="61">Autre - Pêche</option>
+                          </optgroup>
+
+                          <optgroup label="pams"></optgroup>
+
+                          <optgroup label="Commerce">
+                            <option value="69">Commerce de détails</option>
+                            <option value="70">Commerce de gros</option>
+                            <option value="71">Autre - Commerce</option>
+                          </optgroup>
+
+                          <optgroup label="Tourisme-CHR">
+                            <option value="62">Café</option>
+                            <option value="63">Hôtellerie</option>
+                            <option value="64">Restauration</option>
+                            <option value="65">Traiteur</option>
+                            <option value="66">Parc de loisirs</option>
+                            <option value="67">Agence de voyage</option>
+                            <option value="68">Autre - Tourisme-CHR</option>
+                          </optgroup>
+
+                          <optgroup label="Transport ">
+                            <option value="72">Transport de personne</option>
+                            <option value="73">Transport de marchandise</option>
+                            <option value="74">Autre - Transport</option>
+                          </optgroup>
+
+                          <optgroup label="Service">
+                            <option value="75">
+                              Organisation d'événements
+                            </option>
+                            <option value="76">
+                              Agence de location de voiture
+                            </option>
+                            <option value="77">Nettoyage</option>
+                            <option value="78">Jardinage</option>
+                            <option value="79">Gardiennage</option>
+                            <option value="80">Imprimerie</option>
+                            <option value="81">Agence de communication</option>
+                            <option value="82">Cabinet de formation</option>
+                            <option value="83">Livraison</option>
+                            <option value="84">
+                              Reparation matériel élctrique et électronique
+                            </option>
+                            <option value="85">
+                              Mécanique et électricité automobile
+                            </option>
+                            <option value="86">Autre - Service</option>
+                          </optgroup>
+
+                          <optgroup label="Education">
+                            <option value="87">Soutien scolaire</option>
+                            <option value="88">Garderie et crèche</option>
+                            <option value="89">
+                              Ecoles d'enseignement général privés
+                            </option>
+                            <option value="90">
+                              Etablissements de formation professionnelle
+                            </option>
+                            <option value="91">Autre - Education</option>
+                          </optgroup>
+
+                          <optgroup label="Autre secteur">
+                            <option value="92">secteur primaire</option>
+                            <option value="93">secteur secondaire</option>
+                            <option value="94">secteur tertiaire</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="fields-section logical-fields">
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            name="category_other"
+                            id="category_other"
+                            type="text"
+                            class="form-input form-lg-input-one"
+                            placeholder="Autres a préciser..."
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <select
+                          type="text"
+                          id="ilSagitDe"
+                          name="il_sagit_de"
+                          class="form-input form-lg-input"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            s'agit-il de?
+                          </option>
+                          <option value="Extension">Extension</option>
+                          <option value="Création">Création</option>
+                        </select>
+                      </div>
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          id="projetImplantation"
+                          name="projet_implantation"
+                          class="form-input form-lg-input-one"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            Implantation du projet
+                          </option>
+                          <option value="Urbain">Urbain</option>
+                          <option value="Rural">Rural</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <input
+                          type="number"
+                          name="total_jobs"
+                          id="total_jobs"
+                          class="form-input form-lg-input-one"
+                          placeholder="Effectif du projet"
+                          min="0"
+                          data-parsley-group="block-2"
+                        />
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          name="formation_needsSelect"
+                          id="formation_needsSelect"
+                          class="logical-parent form-input form-lg-input-one"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            Auriez-vous besoin d'une formation?
+                          </option>
+                          <option value="Oui">Oui</option>
+                          <option value="Non">Non</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="fields-section logical-fields">
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <input
+                            type="text"
+                            id="formation_needs_desc"
+                            name="formation_needs_desc"
+                            class="form-input form-lg-input-one"
+                            placeholder="Dans quel domaine ?"
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <textarea
+                          name="cote_innovation"
+                          id="coteInnovation"
+                          class="form-input form-lg-input"
+                          cols="30"
+                          rows="7"
+                          placeholder="Selon vous, quel est le côté d’innovation de votre projet ?"
+                          data-parsley-group="block-2"
+                        ></textarea>
+                      </div>
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <textarea
+                          name="avantages"
+                          id="avantages"
+                          class="form-input form-lg-input"
+                          cols="30"
+                          rows="7"
+                          placeholder="Selon vous, quels sonts les avantages concurentiels de votre projet ?"
+                          data-parsley-group="block-2"
+                        ></textarea>
+                      </div>
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <textarea
+                          name="attentes_et_motivations"
+                          id="attentesEtMotivations"
+                          class="form-input form-lg-input-one"
+                          cols="30"
+                          rows="7"
+                          placeholder="project-submission.Quelles sont vos attentes et vos motivations pour le programme ARIEJ ? (Accompagnement pré-création /à la création/post-création)"
+                          data-parsley-group="block-2"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          type="text"
+                          name="state-aid"
+                          id="state-aid"
+                          class="form-input form-lg-input-one logical-parent"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            Avez-vous déjà bénéficié d'une aide étatique?
+                          </option>
+                          <option value="0">
+                            Non, je n'ai jamais bénéficié d'une aide étatique.
+                          </option>
+                          <option value="1">
+                            Oui, j'ai déjà bénéficié d'une aide étatique.
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="fields-section logical-fields">
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <select
+                            name="statehelp[0][aid-oui]"
+                            id="state-aid-oui"
+                            class="form-input form-lg-input-one"
+                            data-parsley-group="block-2"
+                          >
+                            <option disabled="" selected="">
+                              Si oui, laquelle?
+                            </option>
+                            <option value="INDH">INDH</option>
+
+                            <option value="DPA">DPA</option>
+
+                            <option value="Collectivités territoriales">
+                              Collectivités territoriales
+                            </option>
+
+                            <option value="Autre">Autre</option>
+                          </select>
+                        </div>
+                        <div
+                          class="
+                            field-input field-lg-input
+                            w-lg-100
+                            text-right
+                            w-100
+                          "
+                        >
+                          <input
+                            name="statehelp[0][aide_date]"
+                            id="aide_date"
+                            type="number"
+                            min="2010"
+                            max="2021"
+                            class="form-input form-lg-input"
+                            placeholder="Dans qu'elle année?"
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                        <div
+                          class="
+                            field-input field-lg-input
+                            w-lg-100 w-100
+                            text-right
+                          "
+                        >
+                          <input
+                            name="statehelp[0][aide_montant]"
+                            id="aide_montant"
+                            type="number"
+                            min="0"
+                            class="form-input form-lg-input"
+                            placeholder="le montant?"
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-10 w-10">
+                          <input
+                            type="button"
+                            name="add-field"
+                            class="
+                              submitBnt
+                              btn btn-custom
+                              add-field
+                              colored-btn
+                              white
+                              py2
+                              px5
+                              mr-lg-3
+                              ml0
+                              pointer
+                            "
+                            value="+"
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                      </div>
+                      <div class="dynamic-fields">
+                        <!-- Dynamic fielfd will be cloned here -->
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row">
+                      <div
+                        class="
+                          field-input field-lg-input
+                          w-lg-100 w-100
+                          text-right
+                        "
+                      >
+                        <select
+                          name="company[is_created]"
+                          id="company_creation"
+                          class="form-input form-lg-input-one logical-parent"
+                          data-parsley-group="block-2"
+                        >
+                          <option value="" selected="" disabled="">
+                            Avez-vous déjà créé une entreprise pour votre
+                            projet?
+                          </option>
+                          <option value="1">
+                            Oui, j'ai déjà créé une entreprise pour mon projet.
+                          </option>
+                          <option value="0">
+                            Non, je n'est pas encore créé une entreprise pour
+                            mon projet.
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="fields-section logical-fields">
+                      <div class="field-row field-lg-row source-field">
+                        <div class="field-input field-lg-input w-lg-100 w-100">
+                          <select
+                            name="company[0][legal_form]"
+                            id="company_form"
+                            class="form-control form-input form-lg-input-one"
+                            data-parsley-group="block-2"
+                          >
+                            <option disabled="" selected="">
+                              Forme de l'entreprise...
+                            </option>
+                            <option value="S.A.R.L">S.A.R.L</option>
+
+                            <option value="S.A.R.L A.U">S.A.R.L A.U</option>
+
+                            <option value="S.N.C">S.N.C</option>
+
+                            <option value="Coopérative">Coopérative</option>
+
+                            <option value="A.E">A.E</option>
+                          </select>
+                        </div>
+                        <div
+                          class="
+                            field-input field-lg-input
+                            w-lg-100
+                            text-right
+                            w-100
+                          "
+                        >
+                          <input
+                            name="company[0][corporate_name]"
+                            id="company_denomination"
+                            type="text"
+                            class="form-input form-lg-input"
+                            placeholder="Dénomination de l'entreprise..."
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                        <div
+                          class="
+                            field-input field-lg-input
+                            w-lg-100 w-100
+                            text-right
+                          "
+                        >
+                          <input
+                            name="company[0][creation_date]"
+                            id="company_date"
+                            type="date"
+                            class="form-input form-lg-input"
+                            placeholder="project-submission.Date de création de l'entreprise..."
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                        <div class="field-input field-lg-input w-lg-10 w-10">
+                          <input
+                            type="button"
+                            name="add-field"
+                            class="
+                              submitBnt
+                              btn btn-custom
+                              add-field
+                              colored-btn
+                              white
+                              py2
+                              px5
+                              mr-lg-3
+                              ml0
+                              pointer
+                            "
+                            value="+"
+                            data-parsley-group="block-2"
+                          />
+                        </div>
+                      </div>
+                      <div class="dynamic-fields">
+                        <!-- Dynamic fielfd will be cloned here -->
+                      </div>
+                    </div>
+                    <div class="field-row field-lg-row py4">
+                      <div class="field-input field-lg-input w-lg-100 w-100">
+                        <input
+                          type="button"
+                          name="previous"
+                          class="
+                            submitBnt
+                            btn btn-custom
+                            previous
+                            colored-btn
+                            white
+                            py2
+                            px5
+                            pointer
+                          "
+                          value="Précédent"
+                          data-parsley-group="block-2"
+                        />
+                        <input
+                          type="button"
+                          name="next"
+                          class="
+                            submitBnt
+                            btn btn-custom
+                            nextLast
+                            colored-btn
+                            white
+                            py2
+                            px5
+                            mx2
+                            pointer
+                          "
+                          value="Suivant"
+                          data-parsley-group="block-2"
+                        />
+                      </div>
+                    </div>
+                  </span>
+                </fieldset>
               </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="text"
-                    id="titreProjet"
-                    name="titre_projet"
-                    class="form-input form-lg-input-one"
-                    placeholder="titre de votre projet..."
-                  />
-                </div>
-
-                <div
-                  class="field-input field-lg-input w-lg-30 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="secteurActivite"
-                    name="secteur_activite"
-                    class="form-input form-lg-input"
-                  >
-                    <option value="Mr" disabled>Secteur d'activité...</option>
-                    <optgroup label="Agriculture">
-                      <option value="Apiculture">Apiculture</option>
-                      <option value="Aviculture">Aviculture</option>
-                    </optgroup>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <select
-                    type="text"
-                    id="ilSagitDe"
-                    name="il_sagit_de"
-                    class="form-input form-lg-input"
-                  >
-                    <option value="0" selected disabled>S'agit-il de:?</option>
-                    <option value="Extension">Extension</option>
-                    <option value="Création">Création</option>
-                  </select>
-                </div>
-
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="projetImplantation"
-                    name="projet_implantation"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="0" selected disabled>
-                      Implantation du projet?
-                    </option>
-                    <option value="Urbain">Urbain</option>
-                    <option value="Rural">Rural</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <input
-                    type="number"
-                    id="effectifProjet"
-                    name="effectif_projet"
-                    class="form-input form-lg-input-one"
-                    placeholder="Effectif du projet..."
-                    min="1"
-                  />
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="besoinDeFormation"
-                    name="besoin_de_formation"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="">
-                      Auriez-vous besoin d'une formation?
-                    </option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <textarea
-                    name="cote_innovation"
-                    id="coteInnovation"
-                    class="form-input form-lg-input"
-                    cols="30"
-                    rows="7"
-                    placeholder="Selon vous, quel est le côté d’innovation de votre projet ?..."
-                  ></textarea>
-                </div>
-
-                <div class="field-input field-lg-input w-lg-100 w-100">
-                  <textarea
-                    name="attentes_et_motivations"
-                    id="attentesEtMotivations"
-                    class="form-input form-lg-input-one"
-                    cols="30"
-                    rows="7"
-                    placeholder="Quelles sont vos attentes et vos motivations pour ce programme ?..."
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="aideEtatique"
-                    name="aide_etatique"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="0" selected disabled>
-                      Avez-vous déjà bénéficié d'une aide étatique?
-                    </option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-row field-lg-row">
-                <div
-                  class="field-input field-lg-input w-lg-100 w-100 text-right"
-                >
-                  <select
-                    type="text"
-                    id="entrepriseDejaCree"
-                    name="entreprise_deja_cree"
-                    class="form-input form-lg-input-one"
-                  >
-                    <option value="0" selected disabled>
-                      Avez-vous déjà créé une entreprise pour votre projet?
-                    </option>
-                    <option value="oui">oui</option>
-                    <option value="non">Non</option>
-                  </select>
-                </div>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
 
-        <div class="row row-flex justify-center align-center">
+        <div class="row row-flex justify-center align-start">
           <div
             class="column-1 text-center my-steps mt0"
             style="position: relative; margin-top: 0"
@@ -918,21 +1610,18 @@
               >4</a
             >
           </div>
-          <div class="column-11 row-flex align-center justify-center">
+          <div class="column-11 row-flex flex-col align-center justify-center">
             <div class="px5 px-xxs-2 w-lg-100 w-100">
-              <h2 class="primary-title font-35-600">Terminé</h2>
+              <h2 class="primary-title font-35-600 m0">Terminé</h2>
             </div>
-            <form action="#" class="w-100">
-              <div class="text-center w-100 row-flex justify-end">
-                <a href="#" class="button-md colored-btn white py2 px5"
-                  >Précédent</a
-                >
-
-                <a href="#" class="button-md colored-btn white py2 px5 mx2"
-                  >Envoyer</a
-                >
-              </div>
-            </form>
+            <div class="field-lg-row field-row">
+              <form action="#" class="w-100">
+                <div class="text-center w-100 row-flex justify-center">
+                  <a href="#" class="colored-btn white py2 px5">Précédent</a>
+                  <a href="#" class="colored-btn white py2 px5 mx2">Envoyer</a>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -1040,6 +1729,9 @@
     </footer>
 
     <!-- fin footer -->
+    <script>
+      var stickyStart = false;
+    </script>
     <script src="build/css/main.js"></script>
   </body>
 </html>

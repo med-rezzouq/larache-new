@@ -15,6 +15,67 @@
         var closebtn = document.querySelector(".closebtn");
         var irchadlogo = document.querySelector(".irchad-logo");
         var irchadlogosticky = document.querySelector(".irchad-logo-sticky");
+        var submenulist = document.querySelector(".sub-menu-list");
+        var menus = document.querySelectorAll(".menu");
+        var bottomArrow = document.getElementById("bottomArrow");
+        var programmenav = document.querySelectorAll(".programme-nav");
+        var contents = document.querySelectorAll(".content");
+        programmenav.forEach(function (nav) {
+          nav.addEventListener("click", function () {
+            programmenav.forEach(function (programme) {
+              programme.classList.remove("active-programme");
+              programme.querySelectorAll("img").forEach(function (icon) {
+                console.log(icon);
+                if (icon.classList.contains("dnone")) {
+                  icon.classList.remove("dnone");
+                }
+                if (icon.classList.contains("dnone")) {
+                  icon.classList.remove("dnone");
+                }
+                if (
+                  nav.getAttribute("data-id") ==
+                  programme.getAttribute("data-id")
+                ) {
+                  nav.classList.add("active-programme");
+                  if (icon.classList.contains("arrow-bottom")) {
+                    icon.classList.remove("dnone");
+                  }
+                  if (icon.classList.contains("arrow-top")) {
+                    icon.classList.add("dnone");
+                  }
+                } else {
+                  if (icon.classList.contains("arrow-top")) {
+                    icon.classList.remove("dnone");
+                  }
+                  if (icon.classList.contains("arrow-botom")) {
+                    icon.classList.add("dnone");
+                  }
+                }
+              });
+              //this.classList.add("active-programme");
+            });
+            // nav.querySelectorAll("img").forEach(function (icons) {
+            //   icons.classList.add("dnone");
+            // });
+            contents.forEach(function (content) {
+              content.classList.remove("dnone");
+              if (
+                nav.getAttribute("data-id") ==
+                content.getAttribute("data-content")
+              ) {
+                content.classList.remove("dnone");
+              } else {
+                content.classList.add("dnone");
+              }
+            });
+          });
+        });
+        menus.forEach(function (menu) {
+          menu.addEventListener("click", function () {
+            this.querySelector(".sub-menu-list").classList.toggle("dnone");
+          });
+        });
+
         burgerMenu.addEventListener("click", function () {
           document.getElementById("mySidenav").style.width = "100%";
         });
@@ -79,27 +140,39 @@
           });
         });
         window.addEventListener("scroll", function (event) {
-          if (window.scrollY > 100) {
-            headerMenu.classList.add("header-stick");
-            headerMenu.classList.remove("header-before-stick");
+          if (!stickyStart) {
+            if (window.scrollY > 100) {
+              headerMenu.classList.add("header-stick");
+              headerMenu.classList.remove("header-before-stick");
+              irchadlogosticky.classList.remove("dnone");
+              irchadlogo.classList.add("dnone");
+              headerloginbutton.classList.add("colored-btn");
+              headerloginbutton.classList.remove("button-md");
+              headerloginbutton.classList.add("white");
+              headerloginbutton.classList.remove("purple");
+              flexnavlang.classList.add("lang-resp");
+              userIcon.style.fill = "#fff";
 
-            irchadlogosticky.classList.remove("dnone");
-            irchadlogo.classList.add("dnone");
-            headerloginbutton.classList.add("colored-btn");
-            headerloginbutton.classList.add("white");
-            headerloginbutton.classList.remove("purple");
-            flexnavlang.classList.add("lang-resp");
-            userIcon.style.fill = "#fff";
+              bottomArrow.style.stroke = "#3c84f0";
+            } else {
+              headerMenu.classList.remove("header-stick");
+              headerMenu.classList.add("header-before-stick");
+              headerloginbutton.classList.remove("colored-btn");
+              headerloginbutton.classList.add("button-md");
+              headerloginbutton.classList.remove("white");
+              headerloginbutton.classList.add("purple");
+              flexnavlang.classList.remove("lang-resp");
+              irchadlogosticky.classList.add("dnone");
+              irchadlogo.classList.remove("dnone");
+              userIcon.style.fill = "#7245b1";
+              bottomArrow.style.stroke = "#fff";
+            }
           } else {
-            headerMenu.classList.remove("header-stick");
-            headerMenu.classList.add("header-before-stick");
-            headerloginbutton.classList.remove("colored-btn");
-            headerloginbutton.classList.remove("white");
-            headerloginbutton.classList.add("purple");
-            flexnavlang.classList.remove("lang-resp");
-            irchadlogosticky.classList.add("dnone");
-            irchadlogo.classList.remove("dnone");
-            userIcon.style.fill = "#7245b1";
+            if (window.scrollY > 100) {
+              headerMenu.classList.remove("header-stick-nojs");
+            } else {
+              headerMenu.classList.add("header-stick-nojs");
+            }
           }
         });
 

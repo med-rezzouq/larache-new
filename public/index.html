@@ -47,8 +47,17 @@
           <div class="row row-flex ht-100 align-center">
             <div class="column-3 column-xs-2 column-xl-3 row-flex align-center">
               <a href="./"
-                ><img src="images/irchadlogo.svg" class="" alt="irchad logo"
-              /></a>
+                ><img
+                  src="images/irchadlogo.svg"
+                  class="irchad-logo"
+                  alt="irchad logo"
+                />
+                <img
+                  src="images/irchadlogosticky.svg"
+                  class="irchad-logo-sticky dnone"
+                  alt="irchad logo"
+                />
+              </a>
               <a href="./" class="row-flex align-center">
                 <img src="images/logo2.svg" class="img-indh" alt="image indh"
               /></a>
@@ -63,23 +72,44 @@
             >
               <div class="column-grow flex-row align-center">
                 <nav class="nav-desktop">
-                  <ul class="flex-nav blueInit">
+                  <ul class="flex-nav">
+                    <li class="pointer p-relative"><a href="aporpos.html"> À Propos</a></li>
+
                     <li>
-                      <a href="https://larache.irchad.ma/a-propos">À Propos</a>
-                    </li>
-                    <li>
-                      <a href="https://larache.irchad.ma/programme"
-                        >Programme</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://larache.irchad.ma/project-submission"
+                      <a href="soumissionner.html"
                         >Soumissionner un projet</a
                       >
                     </li>
-                    <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                     <li>
-                      <a href="https://larache.irchad.ma/contact">Contact</a>
+                      <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="pointer p-relative menu">
+                      Médias
+                      <svg
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1L4 4L7 1"
+                          stroke="#ffffff"
+                          id="bottomArrow"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <ul class="sub-menu-list dnone">
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li>
+                          <a href="apropos.html"
+                            >Programmes</a
+                          >
+                        </li>
+                      </ul>
                     </li>
 
                     <li>
@@ -93,9 +123,24 @@
                           px3
                           row-flex
                           align-center
+                          header-login-button
+                          font-13-500
                         "
-                        ><img src="images/user-icon.svg" class="mx2" />Se
-                        Connecter</a
+                        ><svg
+                          width="12"
+                          height="15"
+                          class="mx2"
+                          viewBox="0 0 12 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.666656 14.6667C0.666656 13.2522 1.22856 11.8956 2.22875 10.8955C3.22895 9.89526 4.5855 9.33335 5.99999 9.33335C7.41448 9.33335 8.77103 9.89526 9.77123 10.8955C10.7714 11.8956 11.3333 13.2522 11.3333 14.6667H9.99999C9.99999 13.6058 9.57856 12.5884 8.82842 11.8383C8.07827 11.0881 7.06086 10.6667 5.99999 10.6667C4.93912 10.6667 3.92171 11.0881 3.17156 11.8383C2.42142 12.5884 1.99999 13.6058 1.99999 14.6667H0.666656ZM5.99999 8.66669C3.78999 8.66669 1.99999 6.87669 1.99999 4.66669C1.99999 2.45669 3.78999 0.666687 5.99999 0.666687C8.20999 0.666687 9.99999 2.45669 9.99999 4.66669C9.99999 6.87669 8.20999 8.66669 5.99999 8.66669ZM5.99999 7.33335C7.47332 7.33335 8.66666 6.14002 8.66666 4.66669C8.66666 3.19335 7.47332 2.00002 5.99999 2.00002C4.52666 2.00002 3.33332 3.19335 3.33332 4.66669C3.33332 6.14002 4.52666 7.33335 5.99999 7.33335Z"
+                            id="userIcon"
+                            fill="#7245B1"
+                          />
+                        </svg>
+                        Se Connecter</a
                       >
                     </li>
                   </ul>
@@ -110,42 +155,8 @@
                   </li>
                 </ul>
                 <ul class="flex-nav-lang lang z-9999">
-                  <li>
-                    <span class="dropdown">
-                      <button class="font-bold white">AR</button>
-                      <label>
-                        <input type="checkbox" />
-                        <ul>
-                          <li>AR</li>
-
-                          <li>FR</li>
-                        </ul>
-                      </label>
-                    </span>
-                  </li>
-                </ul>
-
-                <ul class="flex-nav-lang lang-resp z-9999">
-                  <li>
-                    <a
-                      href="https://larache.irchad.ma/locale/ar"
-                      class="
-                        button-lang
-                        ar
-                        not-active-lang
-                        blueInitbg
-                        white
-                        p1_5
-                      "
-                      >AR</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://larache.irchad.ma/locale/en"
-                      class="button-lang fr px2-5 blueDark p1_5"
-                      >FR</a
-                    >
+                  <li class="dropdown">
+                    <button class="white">AR</button>
                   </li>
                 </ul>
 
@@ -167,7 +178,7 @@
                     >
                     <ul class="blueInit px0 mt10">
                       <li>
-                        <a href="https://larache.irchad.ma/a-propos"
+                        <a href="apropos.html"
                           >À Propos</a
                         >
                       </li>
@@ -274,8 +285,8 @@
                         <a
                           href="https://larache.irchad.ma/faq"
                           class="button-md white button-border px4 py3"
-                          >En savoir plus</a
-                        >
+                          >En savoir plus
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -305,13 +316,19 @@
                       projet.
                     </p>
                     <ul class="flex-welcome-buttons">
-                      <li class="mr3">pourquoi-irchad-section</li>
+                      <li class="mr3">
+                        <a
+                          href="https://larache.irchad.ma/project-submission"
+                          class="button-md whiteBg purple px4 py3"
+                          >Osez maintenant !
+                        </a>
+                      </li>
                       <li class="mt3">
                         <a
                           href="https://larache.irchad.ma/faq"
                           class="button-md white button-border px4 py3"
-                          >En savoir plus</a
-                        >
+                          >En savoir plus
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -363,7 +380,7 @@
                 <div class="news-bar">
                   <marquee
                     direction="left"
-                    scrollamount="1"
+                    scrollamount="3"
                     scrolldelay="60"
                     behavior="scroll"
                     onmouseover="this.stop()"
@@ -372,59 +389,80 @@
                     <ul>
                       <li>
                         <a href="#" class="hvr-pop"
-                          ><span><b>News1</b></span>
+                          ><span>Bienvenue sur IRCHAD Larache </span>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="hvr-pop"
-                          ><span><b>News2</b></span>
+                          ><span>Bienvenue sur IRCHAD Larache </span>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="hvr-pop"
-                          ><span><b>News3</b></span>
+                          ><span>Bienvenue sur IRCHAD Larache </span>
                         </a>
                       </li>
                     </ul>
                   </marquee>
                 </div>
-                <div class="events">
+                <div class="events container mx-auto p0">
                   <div class="event-card primary-bg">
                     <time class="date">
                       <b class="d-block">15</b>
-                      <p class="d-block">FEB</p>
+                      <p class="d-block">Mai</p>
                     </time>
                     <div class="description">
-                      <p class="d-block">Lorem ipsum dolor sit amet</p>
-                      <a href="#">Lire la suite</a>
+                      <p class="d-block font-14-700">Actualité 1</p>
+                      <a href="#" class="font-13-400">Lire la suite</a>
                     </div>
                   </div>
                   <div class="event-card primary-bg">
                     <time class="date">
-                      <b class="d-block">15</b>
-                      <p class="d-block">FEB</p>
+                      <b class="d-block">20</b>
+                      <p class="d-block">Mai</p>
                     </time>
                     <div class="description">
-                      <p class="d-block">Lorem ipsum dolor sit amet</p>
-                      <a href="#">Lire la suite</a>
+                      <p class="d-block font-14-700">Actualité 2</p>
+                      <a href="#" class="font-13-400">Lire la suite</a>
                     </div>
                   </div>
                   <div class="event-card primary-bg">
                     <time class="date">
-                      <b class="d-block">15</b>
-                      <p class="d-block">FEB</p>
+                      <b class="d-block">10</b>
+                      <p class="d-block">Mai</p>
                     </time>
                     <div class="description">
-                      <p class="d-block">Lorem ipsum dolor sit amet</p>
-                      <a href="#">Lire la suite</a>
+                      <p class="d-block font-14-700">Actualité 3</p>
+                      <a href="#" class="font-13-400">Lire la suite</a>
                     </div>
                   </div>
                   <div class="event-cards">
                     <a
                       href="https://larache.irchad.ma/project-submission"
-                      class="white px4 py2 secondary-btn"
-                      >Voir plus</a
-                    >
+                      class="
+                        white
+                        py2
+                        secondary-btn
+                        py3
+                        px10
+                        row-flex
+                        align-center
+                      "
+                      >Voir plus
+                      <svg
+                        width="24"
+                        height="14"
+                        viewBox="0 0 24 14"
+                        fill="none"
+                        class="ml3"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.7122 7.60609C24.0469 7.27135 24.0469 6.72864 23.7122 6.39391L18.2573 0.939082C17.9226 0.604348 17.3799 0.604348 17.0452 0.939083C16.7104 1.27382 16.7104 1.81653 17.0452 2.15127L21.8939 7L17.0452 11.8487C16.7104 12.1835 16.7104 12.7262 17.0452 13.0609C17.3799 13.3956 17.9226 13.3956 18.2573 13.0609L23.7122 7.60609ZM0.106079 7.85714L23.1061 7.85714L23.1061 6.14286L0.106079 6.14286L0.106079 7.85714Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -471,19 +509,143 @@
           <div class="column-12 row-flex flex-col align-between">
             <h1
               class="
-                section-h1-center
                 text-center
                 primary-title
                 bg-title-purple
                 font-40-600
+                pb6
+                max-width-35
+                mx-auto
               "
             >
-              Un programme <br />
-              d’accompagnement de A à Z
+              Un accompagnement de A à Z
             </h1>
           </div>
         </div>
+
         <div class="row row-flex justify-around mt10">
+          <div
+            class="
+              column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
+              .align-self-stretch
+              mb8
+              px2
+            "
+          >
+            <div class="top-cards h-card-100">
+              <img src="images/bg-card.png" alt="" class="card-image" />
+              <div class="cardbox-body row-flex flex-col">
+                <h2 class="section-h3">Appui à l’employabilité</h2>
+
+                <a
+                  href="https://larache.irchad.ma/project-submission"
+                  class="white px4 row-flex align-center secondary-bg"
+                  >En savoir plus
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    class="ml3"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.7122 7.60609C24.0469 7.27135 24.0469 6.72864 23.7122 6.39391L18.2573 0.939082C17.9226 0.604348 17.3799 0.604348 17.0452 0.939083C16.7104 1.27382 16.7104 1.81653 17.0452 2.15127L21.8939 7L17.0452 11.8487C16.7104 12.1835 16.7104 12.7262 17.0452 13.0609C17.3799 13.3956 17.9226 13.3956 18.2573 13.0609L23.7122 7.60609ZM0.106079 7.85714L23.1061 7.85714L23.1061 6.14286L0.106079 6.14286L0.106079 7.85714Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
+              .align-self-stretch
+              mb8
+              px2
+            "
+          >
+            <div class="top-cards h-card-100">
+              <img src="images/bg-card2.png" alt="" class="card-image" />
+              <div class="cardbox-body row-flex flex-col">
+                <h2 class="section-h3">Appui à l’entreprenariat</h2>
+                <a
+                  href="https://larache.irchad.ma/project-submission"
+                  class="
+                    white
+                    px4
+                    py2
+                    secondary-btn
+                    row-flex
+                    align-center
+                    secondary-bg
+                  "
+                  >En savoir plus
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    class="ml3"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.7122 7.60609C24.0469 7.27135 24.0469 6.72864 23.7122 6.39391L18.2573 0.939082C17.9226 0.604348 17.3799 0.604348 17.0452 0.939083C16.7104 1.27382 16.7104 1.81653 17.0452 2.15127L21.8939 7L17.0452 11.8487C16.7104 12.1835 16.7104 12.7262 17.0452 13.0609C17.3799 13.3956 17.9226 13.3956 18.2573 13.0609L23.7122 7.60609ZM0.106079 7.85714L23.1061 7.85714L23.1061 6.14286L0.106079 6.14286L0.106079 7.85714Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
+              .align-self-stretch
+              mb8
+              px2
+            "
+          >
+            <div class="top-cards h-card-100">
+              <img src="images/bg-card3.png" alt="" class="card-image" />
+              <div class="cardbox-body row-flex flex-col">
+                <h2 class="section-h3">
+                  Economie <br />
+                  sociale et solidaire
+                </h2>
+                <a
+                  href="https://larache.irchad.ma/project-submission"
+                  class="
+                    white
+                    px4
+                    py2
+                    secondary-btn
+                    row-flex
+                    align-center
+                    secondary-bg
+                  "
+                  >En savoir plus
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    class="ml3"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.7122 7.60609C24.0469 7.27135 24.0469 6.72864 23.7122 6.39391L18.2573 0.939082C17.9226 0.604348 17.3799 0.604348 17.0452 0.939083C16.7104 1.27382 16.7104 1.81653 17.0452 2.15127L21.8939 7L17.0452 11.8487C16.7104 12.1835 16.7104 12.7262 17.0452 13.0609C17.3799 13.3956 17.9226 13.3956 18.2573 13.0609L23.7122 7.60609ZM0.106079 7.85714L23.1061 7.85714L23.1061 6.14286L0.106079 6.14286L0.106079 7.85714Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-flex justify-around mt15 top-right-section-bg">
           <div
             class="
               column-12 column-sm-12 column-md-6 column-lg-4 column-xxl-4
@@ -494,9 +656,9 @@
           >
             <div class="card-box h-card-100">
               <img src="images/accompagnement1.svg" alt="" class="w-100" />
-              <div class="cardbox-body row-flex flex-col">
+              <div class="cardbox-body row-flex flex-col py6">
                 <h3 class="section-h3 blueInit">Identifier</h3>
-                <p class="font-13-400 greyBlue text-justify">
+                <p class="font-13-400 grey text-justify px4lead-20">
                   Nous cherchons activement à encourager l'entrepreneuriat et
                   l'esprit entrepreneurial, particulièrement chez les jeunes de
                   18 à 25 ans, en collaboration avec les acteurs de l'écosystème
@@ -515,9 +677,9 @@
           >
             <div class="card-box h-card-100 align-between">
               <img src="images/accompagnement2.svg" alt="" class="w-100" />
-              <div class="cardbox-body row-flex flex-col">
-                <h3 class="section-h3 blueInit">Accompagner et orienter</h3>
-                <p class="font-13-400 greyBlue text-justify">
+              <div class="cardbox-body row-flex flex-col py6">
+                <h3 class="section-h3 purpleLight">Accompagner et orienter</h3>
+                <p class="font-13-400 grey text-justify px4 lead-20">
                   Nous cherchons activement à encourager l'entrepreneuriat et
                   l'esprit entrepreneurial, particulièrement chez les jeunes de
                   18 à 25 ans, en collaboration avec les acteurs de l'écosystème
@@ -536,9 +698,9 @@
           >
             <div class="card-box h-card-100">
               <img src="images/accompagnement3.svg" alt="" class="w-100" />
-              <div class="cardbox-body row-flex flex-col">
+              <div class="cardbox-body row-flex flex-col py6">
                 <h3 class="section-h3 blueInit">Agir</h3>
-                <p class="font-13-400 greyBlue text-justify">
+                <p class="font-13-400 grey text-justify px4 lead-20">
                   Nous cherchons activement à encourager l'entrepreneuriat et
                   l'esprit entrepreneurial, particulièrement chez les jeunes de
                   18 à 25 ans, en collaboration avec les acteurs de l'écosystème
@@ -552,7 +714,7 @@
         <div class="row row-flex justify-center">
           <div class="container py4">
             <div class="column-12 row-flex justify-center">
-              <a href="#" class="py5 px6 colored-btn font-20-500"
+              <a href="#" class="py4 px6 white colored-btn font-20-500"
                 >Je découvre le programme</a
               >
             </div>
@@ -568,10 +730,10 @@
       data-title="pourquoi-irchad-section"
     >
       <div class="container">
-        <div class="row row-flex align-center justify-center">
-          <div class="column-12 row-flex align-between">
-            <h1 class="section-h1-center text-center font-40-600 bg-title">
-              Pourquoi nous choisir ??
+        <div class="row row-flex align-center justify-center my10">
+          <div class="column-12 row-flex align-between mb10">
+            <h1 class="text-center bg-title pb6 font-40-600 mx-auto">
+              Pourquoi nous choisir ?
             </h1>
           </div>
 
@@ -623,7 +785,12 @@
             <div
               class="column-12 row-flex align-between flex-row justify-end px10"
             >
-              <img src="images/bg-title.svg" alt="" class="justify-end" />
+              <img
+                src="images/bg-title.svg"
+                alt=""
+                class="justify-end"
+                style="height: 100%; padding: 2rem 0.2rem 2rem; width: 50px"
+              />
             </div>
 
             <div
@@ -631,7 +798,15 @@
             >
               <a
                 href="https://larache.irchad.ma/faq"
-                class="button-md whiteBg purple button-border px4 py3"
+                class="
+                  button-md
+                  whiteBg
+                  purple
+                  button-border
+                  font-20-500
+                  px6
+                  py4
+                "
                 >Je découvre le programme</a
               >
             </div>
@@ -645,22 +820,31 @@
     <section class="contact-section section-my" data-title="contact-section">
       <div class="container">
         <div class="row row-flex align-center justify-center">
-          <div class="column-12 row-flex flex-col align-center justify-around">
+          <div class="column-12 row-flex flex-col align-start justify-start">
             <h1
               class="
-                section-h1-center
-                text-center
                 primary-title
-                bg-title-purple
+                bg-title-purple-left
                 font-40-600
+                m0
+                ml20
+                mt12
               "
             >
-              Contactez-Nous
+              Besoin d’informations ?
             </h1>
           </div>
         </div>
 
-        <div class="row row-flex align-center justify-center mt8">
+        <div
+          class="
+            row row-flex
+            align-center
+            justify-center
+            mt8
+            bottom-left-section-bg
+          "
+        >
           <div class="column-12 row-flex flex-col align-center justify-around">
             <form action="#" class="w-100 contact-form">
               <div class="field-row field-lg-row">
@@ -709,12 +893,13 @@
                     cols="30"
                     rows="10"
                     class="form-input contact-input"
+                    placeholder="Ecrire votre message"
                   ></textarea>
                 </div>
               </div>
 
               <div class="field-row py4">
-                <a href="#" class="py4 px6 colored-btn mx-auto d-block"
+                <a href="#" class="py4 px6 white colored-btn mx-auto d-block"
                   >Envoyer un message
                 </a>
               </div>
@@ -748,9 +933,9 @@
                 </li>
 
                 <li class="row-flex">
-                  <div class="marker mr2"></div>
-                  <a href="#"
-                    >Lot. Smara, Rue Solaiman Rida, 2ème étage, Larache</a
+                  <div class="marker "></div>
+                  <a href="#"></a>
+                    &nbsp; Lot. Smara, Rue Solaiman Rida, 2ème étage, Larache</a
                   >
                 </li>
                 <li class="row-flex">
@@ -762,7 +947,7 @@
 
             <div
               class="
-                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                column-12 column-xs-12 column-md-6 column-lg-3 column-xl-3
                 row-flex
                 flex-col
                 align-center
@@ -787,25 +972,39 @@
 
             <div
               class="
-                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                column-12 column-xs-12 column-md-6 column-lg-3 column-xl-3
                 row-flex
                 flex-col
                 align-center
                 justify-end
               "
             >
-              <ul class="font-16-500">
+              <ul class="font-16-300">
                 <li><h3 class="bg-title-left pb4">Accès rapide</h3></li>
-                <li><a href="#">À Propos</a></li>
-                <li><a href="#">Programme</a></li>
-                <li><a href="#">Soumissionner un projet</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Nous Contacter</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="soumissionner.html">Soumissionner un projet</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-2 column-xl-2
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+            >
+              <ul class="font-16-300">
+                <li><i class="fab fa-facebook-square fa-2x mt4"></i></li>
               </ul>
             </div>
           </div>
 
-          <div class="row row-flex align-end justify-center py4">
+          <div class="row row-flex align-end justify-center pb4">
             <div
               class="
                 column-12 column-xs-12 column-md-12 column-lg-12 column-xl-12
@@ -823,7 +1022,14 @@
         </div>
       </section>
     </footer>
+    <script>
+      var stickyStart = false;
+    </script>
     <script src="build/css/main.js"></script>
     <!-- fin footer -->
+    <script
+      src="https://kit.fontawesome.com/c8e4f447f9.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

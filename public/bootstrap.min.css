@@ -53,7 +53,7 @@ button:not(:disabled) {
 
 .carousel {
   top: 0;
-  z-index: -100;
+
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -63,28 +63,29 @@ button:not(:disabled) {
 }
 .page-header {
   position: relative;
-  height: 50vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
+  padding: 1rem 0 5rem;
 }
 .page-header::after {
   position: relative;
   display: block;
-  height: 50vh;
+  height: 100%;
   clear: both;
   content: "";
 }
 
 .page-header::before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   background: no-repeat
     url(../../images/welcomebg.svg?ecf67bc9d50e3b5ca1d998307011c086);
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
 
-  left: 0;
   background-size: 100%;
   /* filter: blur(20px); */
   z-index: 100;
@@ -92,7 +93,7 @@ button:not(:disabled) {
 
 .page-header-item {
   color: #fff;
-  height: 100vh;
+  height: 100%;
 
   width: 100%;
 }
@@ -109,10 +110,10 @@ button:not(:disabled) {
 .page-header-item img {
   background-size: cover;
   position: absolute;
-  top: -100%;
+  top: -0%;
   z-index: -100;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .carousel-inner {
@@ -168,8 +169,9 @@ button:not(:disabled) {
 .slide-3 .row {
   position: absolute;
   top: 20%;
-  left: 0%;
+  left: 16%;
   z-index: 100;
+  width: 90%;
 }
 .carousel-item {
   height: 100vh;
@@ -190,12 +192,15 @@ button:not(:disabled) {
   width: 100vw;
 }
 .bottom-slider {
+  z-index: 9900;
   position: absolute;
   display: flex;
   flex-direction: column;
-  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  bottom: 2%;
   left: 0;
-  z-index: 300;
+
   width: 100vw;
 }
 
@@ -205,7 +210,7 @@ button:not(:disabled) {
   width: 100vw;
   background: rgba(252, 252, 252, 0.35);
   margin: 1rem 0rem;
-  padding: 1rem 1rem;
+  padding: 0.6rem 1rem;
 }
 .carousel-inner .news-bar ul {
   padding: 0;
@@ -214,23 +219,42 @@ button:not(:disabled) {
 }
 .carousel-inner .news-bar ul li {
   padding: 0;
-  margin: 0rem 1rem;
+  margin: 0rem 5rem;
   list-style-type: disc;
 }
 
 .carousel-inner .events {
   display: flex;
   justify-content: space-around;
-  z-index: 200;
+  z-index: 300;
   color: #fff;
+
   width: 100%;
   margin: 1rem 0rem;
 }
+.carousel-inner .events .event-card time,
+.carousel-inner .events .event-card .description {
+  padding: 0 0.5rem;
+}
+
+.carousel-inner .events .event-card time {
+  width: 25%;
+}
+
+.carousel-inner .events .event-card .description {
+  width: 75%;
+}
+
+.carousel-inner .events .event-card a {
+  text-decoration: underline;
+}
+
 .carousel-inner .events .event-card time b {
-  font-size: 1.4rem;
+  font-size: 22px;
+  font-weight: 500;
 }
 .carousel-inner .events .event-card time p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 .carousel-inner .events .event-card p {
@@ -242,7 +266,7 @@ button:not(:disabled) {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 0.5rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .primary-bg {
@@ -251,6 +275,57 @@ button:not(:disabled) {
   backdrop-filter: blur(10.4878px);
 }
 
+.secondary-bg {
+  border-radius: 5px;
+  background: rgba(252, 252, 252, 0.25);
+  backdrop-filter: blur(10.4878px);
+  width: max-content;
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+}
+.top-right-section-bg::before {
+  content: "";
+  position: absolute;
+
+  top: -11%;
+  right: -8%;
+  width: 75%;
+  height: 100%;
+  background: no-repeat url(images/right-section-bg.svg);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bottom-left-section-bg::before {
+  content: "";
+  position: absolute;
+
+  bottom: -50%;
+  right: -7%;
+  width: 75%;
+  height: 100%;
+  background: no-repeat url(images/left-section-bg.svg);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bottom-left-section-bg::after {
+  content: "";
+  position: absolute;
+
+  top: 5%;
+  left: -10%;
+  width: 75%;
+  height: 100%;
+  background: no-repeat url(images/bg-dots.svg);
+
+  z-index: -1;
+}
+
+.top-right-section-bg,
+.bottom-left-section-bg {
+  position: relative;
+}
 .button-lang {
   width: max-content;
   border: 1px solid #fff;
@@ -326,7 +401,7 @@ button:not(:disabled) {
   text-align: center;
   background: 0 0;
   border: 0;
-  opacity: 0.5;
+
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -342,7 +417,7 @@ button:not(:disabled) {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -350,7 +425,7 @@ button:not(:disabled) {
 }
 
 .carousel-control-prev {
-  margin: 0 1rem;
+  margin: 0 3rem;
 }
 .carousel-control-prev .carousel-arrow {
   padding: 1.5rem 2rem;
@@ -375,9 +450,9 @@ button:not(:disabled) {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  top: 60%;
+  top: 70%;
   left: 0;
-  z-index: 200;
+  z-index: 9900;
   display: flex;
   justify-content: center;
   padding: 0;
