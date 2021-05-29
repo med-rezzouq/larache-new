@@ -4,47 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/front-office/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Google fonts -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
-    <script src="build/css/main.js" defer></script>
-    <title>IRCHAD LAARACHE | Contact</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="build/css/main.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>IRCHAD LAARACHE</title>
   </head>
   <body>
-    <header>
-      <section class="header header-before-stick" data-title="header-section">
+    <header class="padding-home">
+      <section
+        class="header header-stick header-stick-nojs"
+        style="position: inherit"
+        data-title="header-section"
+      >
         <div class="container">
           <div class="row row-flex ht-100 align-center">
             <div class="column-3 column-xs-2 column-xl-3 row-flex align-center">
               <a href="./"
-                ><img src="images/irchadlogo.svg" class="" alt=""
-              /></a>
-              <a href="./" class="row-flex align-center"
-                ><img src="images/logo.svg" class="img-indh" alt=""
+                ><img
+                  src="images/irchadlogo.svg"
+                  class="irchad-logo dnone"
+                  alt="irchad logo"
+                />
+                <img
+                  src="images/irchadlogosticky.svg"
+                  class="irchad-logo-sticky"
+                  alt="irchad logo"
+                />
+              </a>
+              <a href="./" class="row-flex align-center">
+                <img src="images/logo2.svg" class="img-indh" alt="image indh"
               /></a>
             </div>
             <div
-              class="column-9 column-xs-10 column-xl-9 row-flex justify-between align-center"
+              class="
+                column-9 column-xs-10 column-xl-9
+                row-flex
+                justify-between
+                align-center
+              "
             >
               <div class="column-grow flex-row align-center">
                 <nav class="nav-desktop">
-                  <ul class="flex-nav blueInit">
-                    <li><a href="apropos.html">À Propos</a></li>
-                    <li><a href="programme.html">Programme</a></li>
+                  <ul class="flex-nav">
+                    <li class="pointer p-relative">
+                      <a href="aporpos.html"> À Propos</a>
+                    </li>
+
                     <li>
-                      <a href="soumissionner.html">Soumissioner un projet</a>
+                      <a href="soumissionner.html">Soumissionner un projet</a>
                     </li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="pointer p-relative menu">
+                      Médias
+                      <svg
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1L4 4L7 1"
+                          stroke="#ffffff"
+                          id="bottomArrow"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          style="stroke: rgb(60, 132, 240)"
+                        ></path>
+                      </svg>
+                      <ul class="sub-menu-list dnone">
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li>
+                          <a href="apropos.html">Programmes</a>
+                        </li>
+                      </ul>
+                    </li>
 
                     <li>
                       <a
-                        href="login.html"
-                        class="button-md white blueDarkBg py2 px3"
-                        >Se connecter</a
+                        href="login"
+                        class="
+                          whiteBg
+                          py2
+                          px3
+                          row-flex
+                          align-center
+                          header-login-button
+                          font-13-500
+                          colored-btn
+                          white
+                        "
+                        ><svg
+                          width="12"
+                          height="15"
+                          class="mx2"
+                          viewBox="0 0 12 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.666656 14.6667C0.666656 13.2522 1.22856 11.8956 2.22875 10.8955C3.22895 9.89526 4.5855 9.33335 5.99999 9.33335C7.41448 9.33335 8.77103 9.89526 9.77123 10.8955C10.7714 11.8956 11.3333 13.2522 11.3333 14.6667H9.99999C9.99999 13.6058 9.57856 12.5884 8.82842 11.8383C8.07827 11.0881 7.06086 10.6667 5.99999 10.6667C4.93912 10.6667 3.92171 11.0881 3.17156 11.8383C2.42142 12.5884 1.99999 13.6058 1.99999 14.6667H0.666656ZM5.99999 8.66669C3.78999 8.66669 1.99999 6.87669 1.99999 4.66669C1.99999 2.45669 3.78999 0.666687 5.99999 0.666687C8.20999 0.666687 9.99999 2.45669 9.99999 4.66669C9.99999 6.87669 8.20999 8.66669 5.99999 8.66669ZM5.99999 7.33335C7.47332 7.33335 8.66666 6.14002 8.66666 4.66669C8.66666 3.19335 7.47332 2.00002 5.99999 2.00002C4.52666 2.00002 3.33332 3.19335 3.33332 4.66669C3.33332 6.14002 4.52666 7.33335 5.99999 7.33335Z"
+                            id="userIcon"
+                            fill="#7245B1"
+                            style="fill: rgb(255, 255, 255)"
+                          ></path>
+                        </svg>
+                        Se Connecter</a
                       >
                     </li>
                   </ul>
@@ -58,33 +158,9 @@
                     </div>
                   </li>
                 </ul>
-                <ul class="flex-nav-lang lang">
-                  <li>
-                    <a
-                      href=""
-                      class="button-lang ar not-active-lang blueDark p2"
-                      >Arabe</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="button-lang fr blueDarkBg white py2 px2-5"
-                      >Français</a
-                    >
-                  </li>
-                </ul>
-
-                <ul class="flex-nav-lang lang-resp">
-                  <li>
-                    <a
-                      href=""
-                      class="button-lang ar not-active-lang blueDark p2"
-                      >AR</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" class="button-lang fr blueDarkBg white py2 px2-5"
-                      >FR</a
-                    >
+                <ul class="flex-nav-lang lang z-9999 lang-resp">
+                  <li class="dropdown">
+                    <button class="white">AR</button>
                   </li>
                 </ul>
 
@@ -102,22 +178,32 @@
                       href="javascript:void(0)"
                       class="closebtn"
                       onclick="closeNav()"
-                      >&times;</a
+                      >×</a
                     >
                     <ul class="blueInit px0 mt10">
-                      <li><a href="apropos.html">À Propos</a></li>
-                      <li><a href="programme.html">Programme</a></li>
                       <li>
-                        <a href="soumissionner.html">Soumissioner un projet</a>
+                        <a href="apropos.html">À Propos</a>
                       </li>
-                      <li><a href="faq.html">FAQ</a></li>
-                      <li><a href="contact.html">contact</a></li>
+                      <li>
+                        <a href="https://larache.irchad.ma/programme"
+                          >Programme</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://larache.irchad.ma/project-submission"
+                          >Soumissionner un projet</a
+                        >
+                      </li>
+                      <li><a href="https://larache.irchad.ma/faq">FAQ</a></li>
+                      <li>
+                        <a href="https://larache.irchad.ma/contact">Contact</a>
+                      </li>
 
                       <li>
                         <a
-                          href="login.html"
+                          href="login"
                           class="mx4 button-md whiteBg blueDark py2 px3"
-                          >Se connecter</a
+                          >Se Connecter</a
                         >
                       </li>
                     </ul>
@@ -129,78 +215,59 @@
         </div>
       </section>
       <!-- fin header section  -->
-      <!-- section d'accueil -->
-      <section class="welcome-section section-my" data-title="accueil-section">
-        <div class="container">
-          <div class="row row-flex align-center welcome-overlay">
-            <div
-              class="column-10 column-sm-10column-md-10 row-flex flex-col align-center mx-auto mt10"
-            >
-              <h1 class="section-h1-center text-center">NOUS CONTACTEZ</h1>
-              <p class="greyBlue text-center">
-                Pour toute demande, questionnement ou suggestion, n’hésitez pas
-                à utiliser le formulaire de contact ci-dessous, l’équipe IRCHAD
-                vous répondra dans les meilleurs délais.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- fin section d'accueil -->
+      <!-- clear absolute  -->
+
+      <!-- clear absolute  -->
     </header>
 
-    <!-- contact_single -->
-    <section class="contact-single" data-title="contact_single-section ">
+    <!-- contact form  -->
+    <section class="contact-section mt10" data-title="apropos-section ">
       <div class="container">
-        <div class="row row-flex justify-center align-stretch cards">
+        <div class="row row-flex align-center">
           <div
-            class="column-12 column-sm-6 column-md-6 column-lg-5 column-xl-4 px4 mb4"
+            class="
+              column-12 column-sm-12 column-md-12 column-lg-6
+              align-center
+              animate__animated animate__pulse
+              order-1 order-md-0
+              my10
+            "
           >
-            <div
-              class="card text-center row-flex flex-col flex-wrap justify-between align-between"
+            <h1
+              class="
+                font-lg-bold font-lg-xxl
+                bg-title-left
+                primary-title
+                m0
+                ml3
+              "
             >
-              <img src="images/email-icon.svg" alt="" class="py2" />
-              <b class="blueDark pt4">Email de contact</b>
-              <p class="word-break font-xs">ariej-larache@gmail.com</p>
-            </div>
-          </div>
-          <div
-            class="column-12 column-sm-6 column-md-6 column-lg-5 column-xl-4 px4 mb4"
-          >
-            <div
-              class="card text-center row-flex flex-col flex-wrap justify-center align-center"
-            >
-              <img src="images/oclock-icon.svg" class="py2" alt="" />
-
-              <b class="blueDark pt4">Horaires d’ouverture</b>
-              <p class="word-break font-xs">
-                <b>Lundi - Vendredi</b> : 10h à 13h
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin contact_csingle -->
-
-    <!-- contact -->
-    <section class="contact-section section-my" data-title="contact-section">
-      <div class="container">
-        <div class="row row-flex align-center justify-center">
-          <div class="column-12 row-flex flex-col align-center justify-around">
-            <h1 class="section-h1-center text-center">Formulaire de contact</h1>
+              Formulaire de Contact
+            </h1>
+            <p class="greyInit font-16-400 ml3">
+              Contactez-nous dès maintenant. Nous reviendrons vers vous dans les
+              plus brefs délais.
+            </p>
           </div>
         </div>
 
-        <div class="row row-flex align-center justify-center mt8">
+        <div
+          class="
+            row row-flex
+            align-center
+            justify-center
+            mt8
+            bottom-left-section-bg bottom-abs
+          "
+        >
           <div class="column-12 row-flex flex-col align-center justify-around">
-            <form action="#" class="w-100">
+            <form action="#" class="w-100 contact-form">
               <div class="field-row field-lg-row">
                 <div class="field-input field-lg-input w-100">
                   <input
                     type="text"
                     id="prenom"
-                    class="form-input form-lg-input"
+                    class="form-input form-lg-input contact-input"
                     placeholder="Votre prénom"
                   />
                 </div>
@@ -209,7 +276,7 @@
                   <input
                     type="text"
                     id="name"
-                    class="form-input form-lg-input"
+                    class="form-input form-lg-input contact-input"
                     placeholder="Votre nom"
                   />
                 </div>
@@ -219,7 +286,7 @@
                   <input
                     type="text"
                     id="email"
-                    class="form-input form-lg-input"
+                    class="form-input form-lg-input contact-input"
                     placeholder="Votre adresse email"
                   />
                 </div>
@@ -227,7 +294,7 @@
                   <input
                     type="text"
                     id="tel"
-                    class="form-input form-lg-input"
+                    class="form-input form-lg-input contact-input"
                     placeholder="Votre numéro de téléphone"
                   />
                 </div>
@@ -240,13 +307,14 @@
                     id=""
                     cols="30"
                     rows="10"
-                    class="form-input"
+                    class="form-input contact-input"
+                    placeholder="Ecrire votre message"
                   ></textarea>
                 </div>
               </div>
 
-              <div class="field-row text-center">
-                <a href="#" class="button-md blueInitbg white py2 px5"
+              <div class="field-row py4">
+                <a href="#" class="py4 px6 white colored-btn mx-auto d-block"
                   >Envoyer un message
                 </a>
               </div>
@@ -255,15 +323,153 @@
         </div>
       </div>
     </section>
-    <!-- fin contact -->
+    <!-- fin contact form -->
+
+    <!-- infos contact -->
+    <section
+      class="pourquoi-irchad-section section-my py2"
+      data-title="pourquoi-irchad-section"
+    >
+      <div class="container">
+        <div class="row row-flex align-center justify-center my10">
+          <div class="column-12 row-flex align-between mb10">
+            <h1 class="text-center bg-title pb4 font-40-600 mx-auto">
+              Contactez-Nous
+            </h1>
+          </div>
+
+          <div
+            class="row-flex flex-wrap justify-around"
+            style="align-items: start"
+          >
+            <div class="px10 column-7 row-flex flex-col justify-around align-start my2 p6 primary-bg">
+              <div class="column-12 ">
+
+                <img src="images/white-doc.svg" alt="document icon" class="dblock mx-auto ">
+                <h3 class="font-35-600 pb6 bg-title max-content dblock mx-auto">Coordonnés</h3>
+                <div
+                class="column-12 row-flex align-between flex-row justify-end px10"
+              >
+   
+              </div>
+              </div>
+              <div class="row-flex align-start">
+                <div
+                class="
+                 flex-1
+                  row-flex
+                  flex-col
+                  align-center
+                  justify-end
+                "
+                            >
+                <ul class="font-16-500">
+                  <li>
+                    <h3 class="bg-title-left pb4">Bureau d’accompagnement</h3>
+                  </li>
+                  <li class="row-flex">
+                    <div class="marker "></div>
+                    <a href="#"></a>
+                      &nbsp; Lot. Smara, Rue Solaiman Rida, 2ème étage, Larache</a
+                    >
+                  </li>
+                  <li class="row-flex">
+                    <div class="phone mr2"></div>
+                    <a href="tel:+212 667-650-994">+212 667-650-994</a>
+                  </li>
+                </ul>
+                 </div>
+                
+             <div
+                class="
+                  flex-1
+                  row-flex
+                  flex-col
+                  align-center
+                  justify-end
+                "
+                            >
+                <ul class="font-16-500">
+                  <li>
+                    <h3 class="bg-title-left pb4">Plateforme des jeunes</h3>
+                  </li>
+                  <li class="row-flex">
+                    <div class="marker mr2"></div>
+                    <a href="#" class="mr4">N°6, Lot. El Wafa, Larache</a>
+                  </li>
+                  <li class="row-flex">
+                    <div class="phone mr2"></div>
+                    <a href="tel:+212 607-211-375">+212 607-211-375</a>
+                  </li>
+                </ul>
+               </div>
+              </div>
+            </div>
+
+            <div class="column-4 row-flex align-between my2 p6 primary-bg align-self-stretch align-center">
+              <div
+              class="
+                flex-1
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
+             >
+
+             <div class="column-12 ">
+
+              <img src="images/white-oclock.svg" alt="document icon" class="dblock mx-auto ">
+              <h3 class="font-35-600 pb6 bg-title max-content dblock mx-auto">Horaires</h3>
+              <div
+              class="column-12 row-flex align-between flex-row justify-end px10"
+            >
+ 
+            </div>
+            </div>
+
+
+                    <p class="px10 font-20-500 text-center"><b>Du Lundi au Vendredi </b>
+                   <br />  10h à 13h</p>
+                          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- infos contact -->
+
+    <!-- fin divider-->
+    <div class="container">
+      <div class="row-flex justify-start">
+        <div class="column-8">
+          <div class="divider">
+            <img
+              src="images/divider-arrow.svg"
+              alt=""
+              class="justify-end mx-auto dblock"
+              style="padding: 5rem 0.2rem 2rem"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin divider-->
 
     <!-- footer -->
+
     <footer>
       <section class="footer-section section-mt" data-title="footer-section">
         <div class="container">
           <div class="row row-flex align-end justify-center">
             <div
-              class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4 row-flex flex-col align-center justify-end"
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
             >
               <ul>
                 <li>
@@ -275,7 +481,13 @@
             </div>
 
             <div
-              class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4 row-flex flex-col align-center justify-end"
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
             >
               <ul>
                 <li><a href="#">À Propos</a></li>
@@ -287,7 +499,13 @@
             </div>
 
             <div
-              class="column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4 row-flex flex-col align-center justify-end"
+              class="
+                column-12 column-xs-12 column-md-6 column-lg-4 column-xl-4
+                row-flex
+                flex-col
+                align-center
+                justify-end
+              "
             >
               <ul>
                 <li>2020 © IRCHAD, All Rights Reserved</li>
@@ -299,5 +517,9 @@
     </footer>
 
     <!-- fin footer -->
+    <script>
+      var stickyStart = true;
+    </script>
+    <script src="build/css/main.js"></script>
   </body>
 </html>

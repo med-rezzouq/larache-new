@@ -620,3 +620,61 @@ button:not(:disabled) {
   border-radius: 7px;
   border: 1px solid #3c84f0;
 }
+
+.bottom-left-section-bg::before {
+  content: "";
+  position: absolute;
+
+  bottom: -70%;
+  right: -7%;
+  width: 75%;
+  height: 100%;
+  background: no-repeat url(images/left-section-bg.svg);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bottom-left-section-bg::after {
+  content: "";
+  position: absolute;
+
+  top: 5%;
+  left: -10%;
+  width: 75%;
+  height: 100%;
+  background: no-repeat url(images/bg-dots.svg);
+
+  z-index: -1;
+}
+
+.bottom-left-section-bg {
+  margin-bottom: 5rem;
+}
+
+.phototheque-section-bg {
+  position: relative;
+}
+
+.phototheque-section-bg::before {
+  content: "";
+  position: absolute;
+
+  top: 20%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background: no-repeat url(images/bg-dots-right.svg);
+  background-position-x: right;
+  z-index: -1;
+}
+
+.phototheque-section-bg {
+  margin: 4rem 0;
+  position: relative;
+  min-height: 600px;
+  width: 100%;
+}
+
+.bottom-abs::before {
+  bottom: -55%;
+}
