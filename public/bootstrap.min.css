@@ -86,7 +86,7 @@ button:not(:disabled) {
   height: 100%;
   width: 100%;
 
-  background-size: 100%;
+  background-size: cover;
   /* filter: blur(20px); */
   z-index: 100;
 }
